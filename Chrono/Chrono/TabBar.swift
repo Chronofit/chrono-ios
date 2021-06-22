@@ -14,21 +14,21 @@ struct TabBar: View {
                 Stopwatch()
             }
             .tabItem {
-                Image("timer_black")
+                Label("Stopwatch", image: "timer_black")
             }
 
             NavigationView {
                 Circuits()
             }
             .tabItem {
-                Image("fitness_tab_black")
+                Label("Circuits", image: "fitness_tab_black")
             }
 
             NavigationView {
                 Settings()
             }
             .tabItem {
-                Image("settings_black")
+                Label("Settings", image: "settings_black")
             }
         }
         .accentColor(Color("ChronoAccentColor"))
