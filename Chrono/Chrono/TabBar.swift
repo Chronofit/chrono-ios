@@ -16,14 +16,12 @@ struct TabBar: View {
             .tabItem {
                 Label("Stopwatch", systemImage: "stopwatch")
             }
-
             NavigationView {
                 Circuits()
             }
             .tabItem {
                 Label("Circuits", systemImage: "heart")
             }
-
             NavigationView {
                 Settings()
             }
