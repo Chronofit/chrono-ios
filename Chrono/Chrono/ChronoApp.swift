@@ -17,7 +17,7 @@ struct ChronoApp: App {
     
     var body: some Scene {
         WindowGroup {
-            TabBar()
+            SplashScreen()
         }
     }
     
