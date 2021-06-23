@@ -28,6 +28,7 @@
 		1B7E99C126953CDF006F07E8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B7E99C026953CDF006F07E8 /* GoogleService-Info.plist */; };
 		1B824B472681822100434070 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B824B462681822100434070 /* SplashScreen.swift */; };
 		1E874396AD7AD77BFB8358EE /* Pods_Chrono.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA824E4FEB97E8DF52E5CE1 /* Pods_Chrono.framework */; };
+		47C170D526817D7C005AC488 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C170D426817D7C005AC488 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		1B7E99C026953CDF006F07E8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		1B824B462681822100434070 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		2176FA5421E9C0ECB29B8680 /* Pods-Chrono.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chrono.debug.xcconfig"; path = "Target Support Files/Pods-Chrono/Pods-Chrono.debug.xcconfig"; sourceTree = "<group>"; };
+		47C170D426817D7C005AC488 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		6EA824E4FEB97E8DF52E5CE1 /* Pods_Chrono.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chrono.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AFB24C9EE1D9923B8113AEE /* Pods-Chrono.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chrono.release.xcconfig"; path = "Target Support Files/Pods-Chrono/Pods-Chrono.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,6 +95,7 @@
 			children = (
 				1B6F5358268449A60020D3C3 /* ViewRouter.swift */,
 				1B824B462681822100434070 /* SplashScreen.swift */,
+				47C170D326817D30005AC488 /* Constants */,
 				1B246AD926798AC10062156B /* TabBar.swift */,
 				1B246AC5267986760062156B /* Onboarding */,
 				1B246AC6267986C80062156B /* Stopwatch */,
@@ -184,6 +187,14 @@
 				1B824B462681822100434070 /* SplashScreen.swift */,
 			);
 			path = "Splash Screen";
+            sourceTree = "<group>";
+        };
+		47C170D326817D30005AC488 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				47C170D426817D7C005AC488 /* Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		5119EE2FF3408A70575CBB69 /* Pods */ = {
@@ -356,6 +367,7 @@
 				1B246AD826798A990062156B /* NavigationBar.swift in Sources */,
 				1B6F53562684246D0020D3C3 /* PageControl.swift in Sources */,
 				1B6F534C2682F7E10020D3C3 /* LottieView.swift in Sources */,
+				47C170D526817D7C005AC488 /* Constants.swift in Sources */,
 				1B246AB3267982130062156B /* ChronoApp.swift in Sources */,
 				1B246AD6267989C80062156B /* Hex Color.swift in Sources */,
 				1B246ACE2679880E0062156B /* Stopwatch.swift in Sources */,
@@ -491,7 +503,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"Chrono/Preview Content\"";
-				DEVELOPMENT_TEAM = LL6476HKHT;
+				DEVELOPMENT_TEAM = 4Z782ZN82J;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Chrono/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -514,7 +526,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Chrono/Preview Content\"";
-				DEVELOPMENT_TEAM = LL6476HKHT;
+				DEVELOPMENT_TEAM = 4Z782ZN82J;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Chrono/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
