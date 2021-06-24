@@ -42,7 +42,7 @@ private let data: [OnboardingModel] = [
         detail: "Feel free to leave us feedback and\nconsider joining our Discord server. We\n hope you enjoy using Chrono!",
         asset: "onboard_final",
         isAnimation: true
-    )
+    ),
 ]
 
 struct Onboarding: View {

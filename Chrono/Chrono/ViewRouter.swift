@@ -13,10 +13,9 @@ enum ViewType {
 }
 
 class ViewRouter: ObservableObject {
-
     init() {
-        //Use this only to test!!
-        //UserDefaults.standard.set(false, forKey: "didLaunchBefore")
+        // Use this only to test!!
+        UserDefaults.standard.set(false, forKey: "didLaunchBefore")
 
         if !UserDefaults.standard.bool(forKey: "didLaunchBefore") {
             currentPage = .onboarding
@@ -24,15 +23,13 @@ class ViewRouter: ObservableObject {
             currentPage = .main
         }
     }
-    
+
     @Published var currentPage: ViewType
-    
 }
 
-struct MotherView : View {
-    
+struct MotherView: View {
     @EnvironmentObject var viewRouter: ViewRouter
-    
+
     var body: some View {
         VStack {
             switch viewRouter.currentPage {
