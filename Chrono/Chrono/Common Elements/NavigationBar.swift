@@ -56,3 +56,4 @@ extension View {
         modifier(NavigationBarColor(backgroundColor: backgroundColor, tintColor: tintColor))
     }
 }
+
