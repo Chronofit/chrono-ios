@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "ic_treadmill.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "ic_gym_bag.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
