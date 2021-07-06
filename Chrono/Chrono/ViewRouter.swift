@@ -15,7 +15,7 @@ enum ViewType {
 class ViewRouter: ObservableObject {
     init() {
         // Use this only to test!!
-        UserDefaults.standard.set(false, forKey: "didLaunchBefore")
+        // UserDefaults.standard.set(false, forKey: "didLaunchBefore")
 
         if !UserDefaults.standard.bool(forKey: "didLaunchBefore") {
             currentPage = .onboarding
