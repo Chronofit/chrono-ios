@@ -14,25 +14,25 @@ struct TabBar: View {
                 Stopwatch()
             }
             .tabItem {
-                Label("Stopwatch", systemImage: "stopwatch")
+                Label(Constants.Strings.stopwatch, systemImage: "stopwatch")
             }
             NavigationView {
                 Circuits()
             }
             .tabItem {
-                Label("Circuits", systemImage: "heart")
+                Label(Constants.Strings.circuits, systemImage: "heart")
             }
             NavigationView {
                 Settings()
             }
             .tabItem {
-                Label("Settings", systemImage: "gearshape.fill")
+                Label(Constants.Strings.settings, systemImage: "gearshape.fill")
             }
         }
     }
 }
 
-struct TabBar_Previews: PreviewProvider {
+struct TabBarPreviews: PreviewProvider {
     static var previews: some View {
         TabBar()
             .preferredColorScheme(.dark)

@@ -10,13 +10,13 @@ import SwiftUI
 struct Circuits: View {
     var body: some View {
         VStack {
-            Circuit_Row()
+            CircuitRow()
             Spacer()
         }
     }
 }
 
-struct Circuits_Previews: PreviewProvider {
+struct CircuitsPreviews: PreviewProvider {
     static var previews: some View {
         Circuits()
     }

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Circuit_Row: View {
+struct CircuitRow: View {
     @State var sets = 5
     var body: some View {
         HStack {
@@ -54,9 +54,9 @@ private struct BottomLabel: View {
 }
 
 
-struct Circuit_Row_Previews: PreviewProvider {
+struct CircuitRowPreviews: PreviewProvider {
     static var previews: some View {
-        Circuit_Row()
+        CircuitRow()
             .preferredColorScheme(.dark)
             .previewLayout(.sizeThatFits)
     }
