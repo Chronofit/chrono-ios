@@ -14,7 +14,7 @@ enum ViewType {
 
 class ViewRouter: ObservableObject {
     init() {
-        // Use this only to test!!
+        // Only uncomment for testing!!
         // UserDefaults.standard.set(false, forKey: "didLaunchBefore")
 
         if !UserDefaults.standard.bool(forKey: "didLaunchBefore") {
