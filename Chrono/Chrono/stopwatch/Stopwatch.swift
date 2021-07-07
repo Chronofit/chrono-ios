@@ -9,11 +9,11 @@ import SwiftUI
 
 struct Stopwatch: View {
     var body: some View {
-        Text(Constants.Strings.stopwatch)
+        Text(Strings.stopwatch)
     }
 }
 
-struct StopwatchPreviews: PreviewProvider {
+struct Stopwatch_Previews: PreviewProvider {
     static var previews: some View {
         Stopwatch()
     }

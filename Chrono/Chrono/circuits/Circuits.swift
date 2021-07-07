@@ -16,7 +16,7 @@ struct Circuits: View {
     }
 }
 
-struct CircuitsPreviews: PreviewProvider {
+struct Circuits_Previews: PreviewProvider {
     static var previews: some View {
         Circuits()
     }

@@ -23,7 +23,8 @@
 		1B824B472681822100434070 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B824B462681822100434070 /* SplashScreen.swift */; };
 		1E874396AD7AD77BFB8358EE /* Pods_Chrono.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA824E4FEB97E8DF52E5CE1 /* Pods_Chrono.framework */; };
 		47548CBC2695073600665100 /* CircuitRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47548CBB2695073600665100 /* CircuitRow.swift */; };
-		47C170D526817D7C005AC488 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C170D426817D7C005AC488 /* Constants.swift */; };
+		47580FE626966D12002CF7AA /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47580FE526966D12002CF7AA /* Strings.swift */; };
+		47580FE826966D34002CF7AA /* links.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47580FE726966D34002CF7AA /* links.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,7 +46,8 @@
 		1B824B462681822100434070 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		2176FA5421E9C0ECB29B8680 /* Pods-Chrono.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chrono.debug.xcconfig"; path = "Target Support Files/Pods-Chrono/Pods-Chrono.debug.xcconfig"; sourceTree = "<group>"; };
 		47548CBB2695073600665100 /* CircuitRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircuitRow.swift; sourceTree = "<group>"; };
-		47C170D426817D7C005AC488 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		47580FE526966D12002CF7AA /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		47580FE726966D34002CF7AA /* links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = links.swift; sourceTree = "<group>"; };
 		6EA824E4FEB97E8DF52E5CE1 /* Pods_Chrono.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chrono.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AFB24C9EE1D9923B8113AEE /* Pods-Chrono.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chrono.release.xcconfig"; path = "Target Support Files/Pods-Chrono/Pods-Chrono.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -145,7 +147,7 @@
 		1B246AC92679873F0062156B /* util */ = {
 			isa = PBXGroup;
 			children = (
-				47C170D426817D7C005AC488 /* Constants.swift */,
+				47580FE426966CFB002CF7AA /* constants */,
 				1B246AD3267988380062156B /* Leading.swift */,
 				1B246AD5267989C80062156B /* HexColor.swift */,
 				1B246AD726798A990062156B /* NavigationBar.swift */,
@@ -166,6 +168,15 @@
 				1B824B462681822100434070 /* SplashScreen.swift */,
 			);
 			path = splashScreen;
+			sourceTree = "<group>";
+		};
+		47580FE426966CFB002CF7AA /* constants */ = {
+			isa = PBXGroup;
+			children = (
+				47580FE526966D12002CF7AA /* Strings.swift */,
+				47580FE726966D34002CF7AA /* links.swift */,
+			);
+			path = constants;
 			sourceTree = "<group>";
 		};
 		5119EE2FF3408A70575CBB69 /* Pods */ = {
@@ -304,9 +315,10 @@
 				1B246ACC267987FB0062156B /* Onboarding.swift in Sources */,
 				1B246AD02679881A0062156B /* Circuits.swift in Sources */,
 				1B824B472681822100434070 /* SplashScreen.swift in Sources */,
+				47580FE826966D34002CF7AA /* links.swift in Sources */,
 				1B246AB5267982130062156B /* ContentView.swift in Sources */,
+				47580FE626966D12002CF7AA /* Strings.swift in Sources */,
 				1B246AD826798A990062156B /* NavigationBar.swift in Sources */,
-				47C170D526817D7C005AC488 /* Constants.swift in Sources */,
 				1B246AB3267982130062156B /* ChronoApp.swift in Sources */,
 				1B246AD6267989C80062156B /* HexColor.swift in Sources */,
 				1B246ACE2679880E0062156B /* Stopwatch.swift in Sources */,

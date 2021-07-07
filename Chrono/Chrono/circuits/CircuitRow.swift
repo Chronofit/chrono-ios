@@ -54,7 +54,7 @@ private struct BottomLabel: View {
 }
 
 
-struct CircuitRowPreviews: PreviewProvider {
+struct CircuitRow_Previews: PreviewProvider {
     static var previews: some View {
         CircuitRow()
             .preferredColorScheme(.dark)
