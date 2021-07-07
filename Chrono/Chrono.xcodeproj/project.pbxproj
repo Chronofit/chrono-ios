@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,7 +11,6 @@
 		1B246AB5267982130062156B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B246AB4267982130062156B /* ContentView.swift */; };
 		1B246AB7267982170062156B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B246AB6267982170062156B /* Assets.xcassets */; };
 		1B246ABA267982170062156B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B246AB9267982170062156B /* Preview Assets.xcassets */; };
-		1B246AC4267984EC0062156B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B246AC3267984EC0062156B /* GoogleService-Info.plist */; };
 		1B246ACC267987FB0062156B /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B246ACB267987FB0062156B /* Onboarding.swift */; };
 		1B246ACE2679880E0062156B /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B246ACD2679880E0062156B /* Stopwatch.swift */; };
 		1B246AD02679881A0062156B /* Circuits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B246ACF2679881A0062156B /* Circuits.swift */; };
@@ -21,6 +20,7 @@
 		1B246AD826798A990062156B /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B246AD726798A990062156B /* NavigationBar.swift */; };
 		1B246ADA26798AC10062156B /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B246AD926798AC10062156B /* TabBar.swift */; };
 		1B246ADC2679910F0062156B /* Circuit Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B246ADB2679910F0062156B /* Circuit Row.swift */; };
+		1B7E99C126953CDF006F07E8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B7E99C026953CDF006F07E8 /* GoogleService-Info.plist */; };
 		1B824B472681822100434070 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B824B462681822100434070 /* SplashScreen.swift */; };
 		1E874396AD7AD77BFB8358EE /* Pods_Chrono.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA824E4FEB97E8DF52E5CE1 /* Pods_Chrono.framework */; };
 /* End PBXBuildFile section */
@@ -32,7 +32,6 @@
 		1B246AB6267982170062156B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B246AB9267982170062156B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1B246ABB267982170062156B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1B246AC3267984EC0062156B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1B246ACB267987FB0062156B /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		1B246ACD2679880E0062156B /* Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
 		1B246ACF2679881A0062156B /* Circuits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circuits.swift; sourceTree = "<group>"; };
@@ -42,6 +41,7 @@
 		1B246AD726798A990062156B /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		1B246AD926798AC10062156B /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		1B246ADB2679910F0062156B /* Circuit Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Circuit Row.swift"; sourceTree = "<group>"; };
+		1B7E99C026953CDF006F07E8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		1B824B462681822100434070 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		2176FA5421E9C0ECB29B8680 /* Pods-Chrono.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chrono.debug.xcconfig"; path = "Target Support Files/Pods-Chrono/Pods-Chrono.debug.xcconfig"; sourceTree = "<group>"; };
 		6EA824E4FEB97E8DF52E5CE1 /* Pods_Chrono.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chrono.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,8 +88,7 @@
 				1B246AC7267987130062156B /* Circuits */,
 				1B246AC8267987240062156B /* Settings */,
 				1B246AC92679873F0062156B /* Common Elements */,
-				1B246ACA267987490062156B /* Models */,
-				1B246AC3267984EC0062156B /* GoogleService-Info.plist */,
+				1B7E99C026953CDF006F07E8 /* GoogleService-Info.plist */,
 				1B246AB2267982130062156B /* ChronoApp.swift */,
 				1B246AB4267982130062156B /* ContentView.swift */,
 				1B246AB6267982170062156B /* Assets.xcassets */,
@@ -150,13 +149,6 @@
 			path = "Common Elements";
 			sourceTree = "<group>";
 		};
-		1B246ACA267987490062156B /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		1B824B452681820A00434070 /* Splash Screen */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +186,7 @@
 				1B246AAC267982130062156B /* Frameworks */,
 				1B246AAD267982130062156B /* Resources */,
 				33DABEADEA583FD1D7407C5B /* [CP] Embed Pods Frameworks */,
+				1B7E99C226953ED7006F07E8 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -242,14 +235,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B246ABA267982170062156B /* Preview Assets.xcassets in Resources */,
+				1B7E99C126953CDF006F07E8 /* GoogleService-Info.plist in Resources */,
 				1B246AB7267982170062156B /* Assets.xcassets in Resources */,
-				1B246AC4267984EC0062156B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1B7E99C226953ED7006F07E8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n\nfind ${DWARF_DSYM_FOLDER_PATH} -name \"*.dSYM\" | xargs -I \\{\\} $PODS_ROOT/FirebaseCrashlytics/upload-symbols -gsp ./Chrono/GoogleService-Info.plist -p platform \\{\\}\n";
+		};
 		33DABEADEA583FD1D7407C5B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -437,6 +450,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"Chrono/Preview Content\"";
 				DEVELOPMENT_TEAM = LL6476HKHT;
 				ENABLE_PREVIEWS = YES;
