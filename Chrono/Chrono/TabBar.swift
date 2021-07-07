@@ -31,8 +31,6 @@ struct TabBar: View {
                 Label("Settings", image: "settings_black")
             }
         }
-        .accentColor(Color("ChronoAccentColor"))
-
     }
 }
 

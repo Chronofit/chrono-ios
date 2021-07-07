@@ -31,29 +31,26 @@ struct InlineNavBar: ViewModifier {
 }
 
 struct NavigationBarColor: ViewModifier {
+    init(backgroundColor: UIColor, tintColor: UIColor) {
+        let coloredAppearance = UINavigationBarAppearance()
+        coloredAppearance.configureWithOpaqueBackground()
+        coloredAppearance.backgroundColor = backgroundColor
+        coloredAppearance.titleTextAttributes = [.foregroundColor: tintColor]
+        coloredAppearance.largeTitleTextAttributes = [.foregroundColor: tintColor]
 
-  init(backgroundColor: UIColor, tintColor: UIColor) {
-    let coloredAppearance = UINavigationBarAppearance()
-    coloredAppearance.configureWithOpaqueBackground()
-    coloredAppearance.backgroundColor = backgroundColor
-    coloredAppearance.titleTextAttributes = [.foregroundColor: tintColor]
-    coloredAppearance.largeTitleTextAttributes = [.foregroundColor: tintColor]
-                   
-    UINavigationBar.appearance().standardAppearance = coloredAppearance
-    UINavigationBar.appearance().scrollEdgeAppearance = coloredAppearance
-    UINavigationBar.appearance().compactAppearance = coloredAppearance
-    UINavigationBar.appearance().tintColor = tintColor
-  }
+        UINavigationBar.appearance().standardAppearance = coloredAppearance
+        UINavigationBar.appearance().scrollEdgeAppearance = coloredAppearance
+        UINavigationBar.appearance().compactAppearance = coloredAppearance
+        UINavigationBar.appearance().tintColor = tintColor
+    }
 
-  func body(content: Content) -> some View {
-    content
-  }
-    
+    func body(content: Content) -> some View {
+        content
+    }
 }
 
 extension View {
     func navigationBarColor(backgroundColor: UIColor, tintColor: UIColor) -> some View {
-        self.modifier(NavigationBarColor(backgroundColor: backgroundColor, tintColor: tintColor))
+        modifier(NavigationBarColor(backgroundColor: backgroundColor, tintColor: tintColor))
     }
 }
-
