@@ -11,7 +11,6 @@
 		1B246AB5267982130062156B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B246AB4267982130062156B /* ContentView.swift */; };
 		1B246AB7267982170062156B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B246AB6267982170062156B /* Assets.xcassets */; };
 		1B246ABA267982170062156B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B246AB9267982170062156B /* Preview Assets.xcassets */; };
-		1B246AC4267984EC0062156B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B246AC3267984EC0062156B /* GoogleService-Info.plist */; };
 		1B246ACC267987FB0062156B /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B246ACB267987FB0062156B /* Onboarding.swift */; };
 		1B246ACE2679880E0062156B /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B246ACD2679880E0062156B /* Stopwatch.swift */; };
 		1B246AD02679881A0062156B /* Circuits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B246ACF2679881A0062156B /* Circuits.swift */; };
@@ -21,6 +20,8 @@
 		1B246AD826798A990062156B /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B246AD726798A990062156B /* NavigationBar.swift */; };
 		1B246ADA26798AC10062156B /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B246AD926798AC10062156B /* TabBar.swift */; };
 		1B246ADC2679910F0062156B /* Circuit Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B246ADB2679910F0062156B /* Circuit Row.swift */; };
+		1B7E99BC26953085006F07E8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B7E99BB26953085006F07E8 /* GoogleService-Info.plist */; };
+		1B7E99BE269530D8006F07E8 /* Stopwatch Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7E99BD269530D8006F07E8 /* Stopwatch Manager.swift */; };
 		1B824B472681822100434070 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B824B462681822100434070 /* SplashScreen.swift */; };
 		1E874396AD7AD77BFB8358EE /* Pods_Chrono.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA824E4FEB97E8DF52E5CE1 /* Pods_Chrono.framework */; };
 /* End PBXBuildFile section */
@@ -32,7 +33,6 @@
 		1B246AB6267982170062156B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B246AB9267982170062156B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1B246ABB267982170062156B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1B246AC3267984EC0062156B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1B246ACB267987FB0062156B /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		1B246ACD2679880E0062156B /* Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
 		1B246ACF2679881A0062156B /* Circuits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circuits.swift; sourceTree = "<group>"; };
@@ -42,6 +42,8 @@
 		1B246AD726798A990062156B /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		1B246AD926798AC10062156B /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		1B246ADB2679910F0062156B /* Circuit Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Circuit Row.swift"; sourceTree = "<group>"; };
+		1B7E99BB26953085006F07E8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		1B7E99BD269530D8006F07E8 /* Stopwatch Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Stopwatch Manager.swift"; sourceTree = "<group>"; };
 		1B824B462681822100434070 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		2176FA5421E9C0ECB29B8680 /* Pods-Chrono.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chrono.debug.xcconfig"; path = "Target Support Files/Pods-Chrono/Pods-Chrono.debug.xcconfig"; sourceTree = "<group>"; };
 		6EA824E4FEB97E8DF52E5CE1 /* Pods_Chrono.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chrono.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,8 +90,7 @@
 				1B246AC7267987130062156B /* Circuits */,
 				1B246AC8267987240062156B /* Settings */,
 				1B246AC92679873F0062156B /* Common Elements */,
-				1B246ACA267987490062156B /* Models */,
-				1B246AC3267984EC0062156B /* GoogleService-Info.plist */,
+				1B7E99BB26953085006F07E8 /* GoogleService-Info.plist */,
 				1B246AB2267982130062156B /* ChronoApp.swift */,
 				1B246AB4267982130062156B /* ContentView.swift */,
 				1B246AB6267982170062156B /* Assets.xcassets */,
@@ -118,6 +119,7 @@
 		1B246AC6267986C80062156B /* Stopwatch */ = {
 			isa = PBXGroup;
 			children = (
+				1B7E99BD269530D8006F07E8 /* Stopwatch Manager.swift */,
 				1B246ACD2679880E0062156B /* Stopwatch.swift */,
 			);
 			path = Stopwatch;
@@ -148,13 +150,6 @@
 				1B246AD726798A990062156B /* NavigationBar.swift */,
 			);
 			path = "Common Elements";
-			sourceTree = "<group>";
-		};
-		1B246ACA267987490062156B /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		1B824B452681820A00434070 /* Splash Screen */ = {
@@ -242,8 +237,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B246ABA267982170062156B /* Preview Assets.xcassets in Resources */,
+				1B7E99BC26953085006F07E8 /* GoogleService-Info.plist in Resources */,
 				1B246AB7267982170062156B /* Assets.xcassets in Resources */,
-				1B246AC4267984EC0062156B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +296,7 @@
 				1B246AD2267988240062156B /* Settings.swift in Sources */,
 				1B246ACC267987FB0062156B /* Onboarding.swift in Sources */,
 				1B246AD02679881A0062156B /* Circuits.swift in Sources */,
+				1B7E99BE269530D8006F07E8 /* Stopwatch Manager.swift in Sources */,
 				1B824B472681822100434070 /* SplashScreen.swift in Sources */,
 				1B246AB5267982130062156B /* ContentView.swift in Sources */,
 				1B246AD826798A990062156B /* NavigationBar.swift in Sources */,

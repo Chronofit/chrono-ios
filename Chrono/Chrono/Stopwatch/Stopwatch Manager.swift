@@ -20,13 +20,17 @@ class StopwatchManager: ObservableObject {
     private var currentLap = 0.0
     private var isRunning = false
     private var stopwatch: Timer?
-
-    var backgroundTime: Date?
-    var background_forground_timelaps: Double?
+    private var backgroundTime: Date?
+    private var background_forground_timelaps: Double?
 
     deinit {
         NotificationCenter.default.removeObserver(self, name: UIApplication.didEnterBackgroundNotification, object: nil)
         NotificationCenter.default.removeObserver(self, name: UIApplication.willEnterForegroundNotification, object: nil)
+        stopwatch?.invalidate()
+        totalTime = 0.0
+        currentLap = 0.0
+        laps = []
+        isRunning = false
     }
 
     func start() {
@@ -64,13 +68,13 @@ class StopwatchManager: ObservableObject {
     }
 
     @objc fileprivate func didEnterBackgroundNotification() {
-        print("Backgrounded")
+        guard isRunning else { return }
         background_forground_timelaps = nil
         backgroundTime = Date()
     }
 
     @objc fileprivate func willEnterForegroundNotification() {
-        print("Foreground")
+        guard isRunning else { return }
         background_forground_timelaps = Date().timeIntervalSince(backgroundTime ?? Date())
         backgroundTime = nil
         totalTime += background_forground_timelaps ?? 0
