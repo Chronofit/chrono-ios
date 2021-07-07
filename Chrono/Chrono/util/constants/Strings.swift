@@ -6,9 +6,9 @@
 //
 
 import Foundation
-struct Strings{
+struct Strings {
     static let appName = "Chrono"
-    
+
     // Timer Controls
     static let stop = "Stop"
     static let start = "Start"
@@ -16,7 +16,7 @@ struct Strings{
     static let resume = "Resume"
     static let lap = "Lap"
     static let chronometer = "Chronometer"
-    
+
     // Circuit Create
     static let _0 = "0"
     static let _5 = "5"
@@ -32,31 +32,31 @@ struct Strings{
     static let sec = "sec"
     static let rest = "Rest"
     static let work = "Work"
-    
+
     static let workout = "Workout"
     static let getReady = "Get Ready"
     static let circuitName = "Circuit Name"
     static let name = "Name"
     static let letsGo = "Let's Go!"
-    
+
     // Tab Navigation
     static let settings = "Settings"
     static let circuits = "Circuits"
     static let stopwatch = "Stopwatch"
-    
+
     // Delete Circuit Dialog
     static let delete_cicuit = "Delete Circuit"
     static let delete_circuit_subtitle = "Do you want to delete this circuit?"
     static let delete = "Delete"
     static let cancel = "Cancel"
-    
+
     // Circuit Complete Dialog
     static let circuit_complete = "Circuit Complete🥳🥳🥳"
     static let circuit_complete_subtitle = "Woohoo! You have completed your circuit, good job!!!"
     static let circuit_complete_confirm = "Finish"
     static let circuit_complete_cancel = "Restart"
     static let circuit_complete_celebrate = "Circuit Complete!"
-    
+
     // Easter Egg Dialog
     static let easter_egg = "🐇🥚"
     static let easter_egg_subtitle = "Congrats! You just unlocked the super secret stats page. Soon, this will be available to everyone, but right now it\'s an easter egg 🤫"
@@ -66,8 +66,7 @@ struct Strings{
     static let total_circuits = "Total Circuits"
     static let _0h0m = "0h 0m"
     static let _0h0m0s = "0h 0m 0s"
-    
-    
+
     // Settings
     static let notifications = "Notifications"
     static let on = "On"
@@ -89,7 +88,7 @@ struct Strings{
     static let get_help = "Get Help"
     static let skip_last_rest = "Skip Last Rest"
     static let select_icon_subtitle = "Use this icon to represent your circuit"
-    
+
     static let chrono_logo = "Chrono Logo"
     static let change_nicon = "Change\nIcon"
     static let max_char_warning = "Maximum 50 characters."
@@ -112,7 +111,7 @@ struct Strings{
     static let next = "Next"
     static let skip = "Skip"
     static let continue_button = "Continue"
-    
+
     // Onboarding Titles/Subtitles
     static let onboard_welcome_title = "Welcome"
     static let onboard_welcome_subtitle = "Thank you for choosing Chrono! Let\'s\nwalk you through how our app\nworks."

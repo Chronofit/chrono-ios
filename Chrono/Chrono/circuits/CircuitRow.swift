@@ -53,7 +53,6 @@ private struct BottomLabel: View {
     }
 }
 
-
 struct CircuitRow_Previews: PreviewProvider {
     static var previews: some View {
         CircuitRow()
