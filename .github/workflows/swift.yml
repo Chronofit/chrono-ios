@@ -3,11 +3,11 @@ name: Swift
 on: [push, pull_request]
 
 jobs:
-  build:
-
-    runs-on: macos-latest
-
-    steps:
-    - uses: actions/checkout@v2
-    - name: Build
-      run: xcodebuild -scheme Chrono -workspace Chrono/Chrono.xcworkspace -configuration Release clean build
+  SwiftLint:
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v1
+        - name: GitHub Action for SwiftLint (Only files changed in the PR)
+          uses: norio-nomura/action-swiftlint@3.2.1
+          env:
+            DIFF_BASE: ${{ github.base_ref }}
