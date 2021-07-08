@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct Circuits: View {
-        
     var body: some View {
         VStack {
             Circuit_Row()

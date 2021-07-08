@@ -8,36 +8,32 @@
 import SwiftUI
 
 struct Circuit_Row: View {
-    
     @State var sets = 5
-    
+
     var body: some View {
-        
         HStack {
-            
             Image(systemName: "heart.fill")
                 .resizable()
                 .frame(width: 80, height: 80, alignment: .center)
                 .padding()
-            
+
             VStack {
-                
                 HStack {
                     Text("Jump Rope Warmup")
                         .bold()
                         .font(.body)
-                    
+
                     Spacer()
-                    
+
                     Image(systemName: "line.horizontal.3")
                         .resizable()
                         .frame(width: 10, height: 15, alignment: .center)
                 }
-                
+
                 Leading {
                     Text("\(sets) Sets")
                 }
-                
+
                 HStack {
                     BottomLabel(restTime: 50)
                         .padding(.trailing)
@@ -45,18 +41,13 @@ struct Circuit_Row: View {
                     Spacer()
                 }
                 .padding(.top)
-      
             }
-        
         }
         .padding()
-        
     }
 }
 
-
 private struct BottomLabel: View {
-    
     @State var restTime = 10
 
     var body: some View {
@@ -68,9 +59,7 @@ private struct BottomLabel: View {
         }
     }
 }
-        
-        
-        
+
 struct Circuit_Row_Previews: PreviewProvider {
     static var previews: some View {
         Circuit_Row()
