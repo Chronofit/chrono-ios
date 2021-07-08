@@ -167,13 +167,6 @@
 			path = "Common Elements";
 			sourceTree = "<group>";
 		};
-		1B246ACA267987490062156B /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		1B6F53502682F86D0020D3C3 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,19 +176,11 @@
 			path = Animations;
 			sourceTree = "<group>";
 		};
-		1B824B452681820A00434070 /* Splash Screen */ = {
-			isa = PBXGroup;
-			children = (
-				1B824B462681822100434070 /* SplashScreen.swift */,
-			);
-			path = "Splash Screen";
-            sourceTree = "<group>";
-        };
 		47C170D326817D30005AC488 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
-                47580FE526966D12002CF7AA /* Strings.swift */,
-                47580FE726966D34002CF7AA /* Links.swift */,
+				47580FE526966D12002CF7AA /* Strings.swift */,
+				47580FE726966D34002CF7AA /* Links.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -368,12 +353,10 @@
 				1B246AD02679881A0062156B /* Circuits.swift in Sources */,
 				1B824B472681822100434070 /* SplashScreen.swift in Sources */,
 				47580FE826966D34002CF7AA /* Links.swift in Sources */,
-				1B246AB5267982130062156B /* ContentView.swift in Sources */,
 				47580FE626966D12002CF7AA /* Strings.swift in Sources */,
 				1B246AD826798A990062156B /* NavigationBar.swift in Sources */,
 				1B6F53562684246D0020D3C3 /* PageControl.swift in Sources */,
 				1B6F534C2682F7E10020D3C3 /* LottieView.swift in Sources */,
-				47C170D526817D7C005AC488 /* Constants.swift in Sources */,
 				1B246AB3267982130062156B /* ChronoApp.swift in Sources */,
 				1B246AD6267989C80062156B /* Hex Color.swift in Sources */,
 				1B246ACE2679880E0062156B /* Stopwatch.swift in Sources */,
@@ -509,7 +492,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"Chrono/Preview Content\"";
-				DEVELOPMENT_TEAM = 4Z782ZN82J;
+				DEVELOPMENT_TEAM = LL6476HKHT;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Chrono/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -532,7 +515,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Chrono/Preview Content\"";
-				DEVELOPMENT_TEAM = 4Z782ZN82J;
+				DEVELOPMENT_TEAM = LL6476HKHT;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Chrono/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
