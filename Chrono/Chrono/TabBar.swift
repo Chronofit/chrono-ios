@@ -20,14 +20,12 @@ struct TabBar: View {
                 Circuits()
             }
             .tabItem {
-                Label(Strings.circuits, systemImage: "heart")
                 Label(Strings.circuits, image: "fitness_tab_black")
             }
             NavigationView {
                 Settings()
             }
             .tabItem {
-                Label(Strings.settings, systemImage: "gearshape.fill")
                 Label(Strings.settings, image: "settings_black")
             }
         }
