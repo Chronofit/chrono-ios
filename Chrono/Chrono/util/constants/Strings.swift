@@ -86,7 +86,7 @@ struct Strings {
     static let maxCharWarning = "Maximum 50 characters."
     static let comingSoon = "Coming Soon"
     static let systemDefault = "System Default"
-    static let theNumberOfSecondsBeforeYourCircuitBegins = "The number of seconds before your circuit begins"
+    static let secondsBeforeCircuitBegins = "The number of seconds before your circuit begins"
     static let enterTheDarkSide = "Enter the dark side"
     static let edit = "Edit"
     static let share = "Share"
