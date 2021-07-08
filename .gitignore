@@ -90,4 +90,4 @@ fastlane/test_output
 iOSInjectionProject/
 .DS_Store
 Chrono/Chrono/GoogleService-Info.plist
-Chrono/GoogleService-Info.plist
+Chono/GoogleService-Info.plist
