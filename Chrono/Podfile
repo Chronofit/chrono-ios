@@ -6,6 +6,6 @@ target 'Chrono' do
   use_frameworks!
 
   # Pods for Chrono
-  pod 'Firebase/Crashlytics'
-  pod 'Firebase/Analytics'
+  
+   pod 'Firebase/Analytics'
 end

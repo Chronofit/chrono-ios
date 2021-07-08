@@ -13,7 +13,7 @@ struct SplashScreen: View {
     var body: some View {
         VStack {
             if self.isActive {
-                MotherView().environmentObject(ViewRouter())
+                TabBar()
             } else {
                 SplashView()
             }
@@ -28,7 +28,7 @@ struct SplashScreen: View {
     }
 }
 
-private struct SplashView: View {
+struct SplashView: View {
     @Environment(\.colorScheme) var colorScheme
 
     var body: some View {
