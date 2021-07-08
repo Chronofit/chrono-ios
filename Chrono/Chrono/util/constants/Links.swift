@@ -6,7 +6,7 @@
 //
 
 import Foundation
-struct links {
+struct Links {
     static let privacyPageLink = "https://chronofit.herokuapp.com/privacyPolicy"
     static let discordInviteLink = "https://discord.gg/UbWrRxwkgR"
     static let appRatingPrimaryLink = "TODO"
