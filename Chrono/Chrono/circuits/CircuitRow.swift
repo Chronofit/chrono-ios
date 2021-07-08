@@ -7,8 +7,10 @@
 
 import SwiftUI
 
+
 struct CircuitRow: View {
     @State var sets = 5
+    
     var body: some View {
         HStack {
             Image(systemName: "heart.fill")
@@ -25,9 +27,11 @@ struct CircuitRow: View {
                         .resizable()
                         .frame(width: 10, height: 15, alignment: .center)
                 }
+
                 Leading {
                     Text("\(sets) Sets")
                 }
+
                 HStack {
                     BottomLabel(restTime: 50)
                         .padding(.trailing)

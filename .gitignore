@@ -89,4 +89,9 @@ fastlane/test_output
 
 iOSInjectionProject/
 .DS_Store
+<<<<<<< HEAD
 GoogleService-Info.plist
+=======
+Chrono/Chrono/GoogleService-Info.plist
+Chrono/GoogleService-Info.plist
+>>>>>>> develop

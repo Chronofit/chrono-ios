@@ -3,15 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1B246AB3267982130062156B /* ChronoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B246AB2267982130062156B /* ChronoApp.swift */; };
-		1B246AB5267982130062156B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B246AB4267982130062156B /* ContentView.swift */; };
-		1B246AB7267982170062156B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B246AB6267982170062156B /* Assets.xcassets */; };
 		1B246ABA267982170062156B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B246AB9267982170062156B /* Preview Assets.xcassets */; };
-		1B246AC4267984EC0062156B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B246AC3267984EC0062156B /* GoogleService-Info.plist */; };
 		1B246ACC267987FB0062156B /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B246ACB267987FB0062156B /* Onboarding.swift */; };
 		1B246ACE2679880E0062156B /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B246ACD2679880E0062156B /* Stopwatch.swift */; };
 		1B246AD02679881A0062156B /* Circuits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B246ACF2679881A0062156B /* Circuits.swift */; };
@@ -20,21 +17,27 @@
 		1B246AD6267989C80062156B /* HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B246AD5267989C80062156B /* HexColor.swift */; };
 		1B246AD826798A990062156B /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B246AD726798A990062156B /* NavigationBar.swift */; };
 		1B246ADA26798AC10062156B /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B246AD926798AC10062156B /* TabBar.swift */; };
+		1B6F534C2682F7E10020D3C3 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6F534B2682F7E10020D3C3 /* LottieView.swift */; };
+		1B6F534F2682F8290020D3C3 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 1B6F534E2682F8290020D3C3 /* Lottie */; };
+		1B6F53562684246D0020D3C3 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6F53552684246D0020D3C3 /* PageControl.swift */; };
+		1B6F5359268449A60020D3C3 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6F5358268449A60020D3C3 /* ViewRouter.swift */; };
+		1B7E99C126953CDF006F07E8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B7E99C026953CDF006F07E8 /* GoogleService-Info.plist */; };
 		1B824B472681822100434070 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B824B462681822100434070 /* SplashScreen.swift */; };
 		1E874396AD7AD77BFB8358EE /* Pods_Chrono.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA824E4FEB97E8DF52E5CE1 /* Pods_Chrono.framework */; };
 		47548CBC2695073600665100 /* CircuitRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47548CBB2695073600665100 /* CircuitRow.swift */; };
 		47580FE626966D12002CF7AA /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47580FE526966D12002CF7AA /* Strings.swift */; };
 		47580FE826966D34002CF7AA /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47580FE726966D34002CF7AA /* Links.swift */; };
+		47925D052696A5A90021FA29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47925D042696A5A90021FA29 /* Assets.xcassets */; };
+		47925D072696AA760021FA29 /* Animations in Resources */ = {isa = PBXBuildFile; fileRef = 47925D062696AA760021FA29 /* Animations */; };
+		47925D0A2696AAE90021FA29 /* onboard_final.json in Resources */ = {isa = PBXBuildFile; fileRef = 47925D082696AAE90021FA29 /* onboard_final.json */; };
+		47925D0B2696AAE90021FA29 /* onboard_welcome.json in Resources */ = {isa = PBXBuildFile; fileRef = 47925D092696AAE90021FA29 /* onboard_welcome.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1B246AAF267982130062156B /* Chrono.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chrono.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B246AB2267982130062156B /* ChronoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChronoApp.swift; sourceTree = "<group>"; };
-		1B246AB4267982130062156B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		1B246AB6267982170062156B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B246AB9267982170062156B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1B246ABB267982170062156B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1B246AC3267984EC0062156B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1B246ACB267987FB0062156B /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		1B246ACD2679880E0062156B /* Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
 		1B246ACF2679881A0062156B /* Circuits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circuits.swift; sourceTree = "<group>"; };
@@ -43,11 +46,19 @@
 		1B246AD5267989C80062156B /* HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexColor.swift; sourceTree = "<group>"; };
 		1B246AD726798A990062156B /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		1B246AD926798AC10062156B /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		1B6F534B2682F7E10020D3C3 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		1B6F53552684246D0020D3C3 /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
+		1B6F5358268449A60020D3C3 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
+		1B7E99C026953CDF006F07E8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		1B824B462681822100434070 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		2176FA5421E9C0ECB29B8680 /* Pods-Chrono.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chrono.debug.xcconfig"; path = "Target Support Files/Pods-Chrono/Pods-Chrono.debug.xcconfig"; sourceTree = "<group>"; };
 		47548CBB2695073600665100 /* CircuitRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircuitRow.swift; sourceTree = "<group>"; };
 		47580FE526966D12002CF7AA /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		47580FE726966D34002CF7AA /* Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
+		47925D042696A5A90021FA29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		47925D062696AA760021FA29 /* Animations */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Animations; sourceTree = "<group>"; };
+		47925D082696AAE90021FA29 /* onboard_final.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = onboard_final.json; path = Chrono/onboarding/Animations/onboard_final.json; sourceTree = SOURCE_ROOT; };
+		47925D092696AAE90021FA29 /* onboard_welcome.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = onboard_welcome.json; path = Chrono/onboarding/Animations/onboard_welcome.json; sourceTree = SOURCE_ROOT; };
 		6EA824E4FEB97E8DF52E5CE1 /* Pods_Chrono.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chrono.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AFB24C9EE1D9923B8113AEE /* Pods-Chrono.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chrono.release.xcconfig"; path = "Target Support Files/Pods-Chrono/Pods-Chrono.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +69,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E874396AD7AD77BFB8358EE /* Pods_Chrono.framework in Frameworks */,
+				1B6F534F2682F8290020D3C3 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +83,7 @@
 				1B246AB0267982130062156B /* Products */,
 				5119EE2FF3408A70575CBB69 /* Pods */,
 				A23B7BACDBB6243064AC678B /* Frameworks */,
+				47580FE92696A2D2002CF7AA /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,10 +106,9 @@
 				1B246AC8267987240062156B /* settings */,
 				1B246AC92679873F0062156B /* util */,
 				1B246ACA267987490062156B /* Models */,
-				1B246AC3267984EC0062156B /* GoogleService-Info.plist */,
+				1B6F5358268449A60020D3C3 /* ViewRouter.swift */,
 				1B246AB2267982130062156B /* ChronoApp.swift */,
-				1B246AB4267982130062156B /* ContentView.swift */,
-				1B246AB6267982170062156B /* Assets.xcassets */,
+				47925D042696A5A90021FA29 /* Assets.xcassets */,
 				1B246ABB267982170062156B /* Info.plist */,
 				1B246AB8267982170062156B /* Preview Content */,
 			);
@@ -106,6 +118,8 @@
 		1B246AB8267982170062156B /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				47925D082696AAE90021FA29 /* onboard_final.json */,
+				47925D092696AAE90021FA29 /* onboard_welcome.json */,
 				1B246AB9267982170062156B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -114,7 +128,9 @@
 		1B246AC5267986760062156B /* onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				47925D062696AA760021FA29 /* Animations */,
 				1B246ACB267987FB0062156B /* Onboarding.swift */,
+				1B6F53552684246D0020D3C3 /* PageControl.swift */,
 			);
 			path = onboarding;
 			sourceTree = "<group>";
@@ -151,6 +167,7 @@
 				1B246AD3267988380062156B /* Leading.swift */,
 				1B246AD5267989C80062156B /* HexColor.swift */,
 				1B246AD726798A990062156B /* NavigationBar.swift */,
+				1B6F534B2682F7E10020D3C3 /* LottieView.swift */,
 			);
 			path = util;
 			sourceTree = "<group>";
@@ -177,6 +194,14 @@
 				47580FE726966D34002CF7AA /* Links.swift */,
 			);
 			path = constants;
+			sourceTree = "<group>";
+		};
+		47580FE92696A2D2002CF7AA /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				1B7E99C026953CDF006F07E8 /* GoogleService-Info.plist */,
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		5119EE2FF3408A70575CBB69 /* Pods */ = {
@@ -208,12 +233,16 @@
 				1B246AAC267982130062156B /* Frameworks */,
 				1B246AAD267982130062156B /* Resources */,
 				33DABEADEA583FD1D7407C5B /* [CP] Embed Pods Frameworks */,
+				1B7E99C226953ED7006F07E8 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Chrono;
+			packageProductDependencies = (
+				1B6F534E2682F8290020D3C3 /* Lottie */,
+			);
 			productName = Chrono;
 			productReference = 1B246AAF267982130062156B /* Chrono.app */;
 			productType = "com.apple.product-type.application";
@@ -241,6 +270,9 @@
 				Base,
 			);
 			mainGroup = 1B246AA6267982130062156B;
+			packageReferences = (
+				1B6F534D2682F8290020D3C3 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = 1B246AB0267982130062156B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -255,15 +287,38 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47925D0A2696AAE90021FA29 /* onboard_final.json in Resources */,
 				1B246ABA267982170062156B /* Preview Assets.xcassets in Resources */,
-				1B246AB7267982170062156B /* Assets.xcassets in Resources */,
-				1B246AC4267984EC0062156B /* GoogleService-Info.plist in Resources */,
+				47925D072696AA760021FA29 /* Animations in Resources */,
+				1B7E99C126953CDF006F07E8 /* GoogleService-Info.plist in Resources */,
+				47925D0B2696AAE90021FA29 /* onboard_welcome.json in Resources */,
+				47925D052696A5A90021FA29 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1B7E99C226953ED7006F07E8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n\nfind ${DWARF_DSYM_FOLDER_PATH} -name \"*.dSYM\" | xargs -I \\{\\} $PODS_ROOT/FirebaseCrashlytics/upload-symbols -gsp ./Chrono/GoogleService-Info.plist -p platform \\{\\}\n";
+		};
 		33DABEADEA583FD1D7407C5B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -310,15 +365,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B6F5359268449A60020D3C3 /* ViewRouter.swift in Sources */,
 				1B246AD4267988380062156B /* Leading.swift in Sources */,
 				1B246AD2267988240062156B /* Settings.swift in Sources */,
 				1B246ACC267987FB0062156B /* Onboarding.swift in Sources */,
 				1B246AD02679881A0062156B /* Circuits.swift in Sources */,
 				1B824B472681822100434070 /* SplashScreen.swift in Sources */,
 				47580FE826966D34002CF7AA /* Links.swift in Sources */,
-				1B246AB5267982130062156B /* ContentView.swift in Sources */,
 				47580FE626966D12002CF7AA /* Strings.swift in Sources */,
 				1B246AD826798A990062156B /* NavigationBar.swift in Sources */,
+				1B6F53562684246D0020D3C3 /* PageControl.swift in Sources */,
+				1B6F534C2682F7E10020D3C3 /* LottieView.swift in Sources */,
 				1B246AB3267982130062156B /* ChronoApp.swift in Sources */,
 				1B246AD6267989C80062156B /* HexColor.swift in Sources */,
 				1B246ACE2679880E0062156B /* Stopwatch.swift in Sources */,
@@ -453,6 +510,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"Chrono/Preview Content\"";
 				DEVELOPMENT_TEAM = 4Z782ZN82J;
 				ENABLE_PREVIEWS = YES;
@@ -514,6 +572,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1B6F534D2682F8290020D3C3 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1B6F534E2682F8290020D3C3 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B6F534D2682F8290020D3C3 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1B246AA7267982130062156B /* Project object */;
 }
