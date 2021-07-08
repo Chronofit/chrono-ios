@@ -18,9 +18,6 @@ struct Strings {
     static let chronometer = "Chronometer"
 
     // Circuit Create
-    static let const0 = "0"
-    static let cont5 = "5"
-    static let cont30 = "30"
     static let nameInputHint = "Name of Circuit"
     static let save = "Save"
     static let discard = "Discard"
@@ -64,8 +61,6 @@ struct Strings {
     static let stats = "Stats"
     static let totalTime = "Total Time"
     static let totalCircuits = "Total Circuits"
-    static let staticTimer = "0h 0m"
-    static let staticStopwatch = "0h 0m 0s"
 
     // Settings
     static let notifications = "Notifications"
@@ -81,9 +76,6 @@ struct Strings {
     static let getReadyTime = "Get Ready Time"
     static let timeEmoji = "⏳"
     static let darkEmoji = "🕶️"
-    static let const5s = "5s"
-    static let const10s = "10s"
-    static let const15s = "15s"
     static let rateApp = "Rate App"
     static let getHelp = "Get Help"
     static let skipLastRest = "Skip Last Rest"
