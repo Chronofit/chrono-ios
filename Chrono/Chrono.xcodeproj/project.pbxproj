@@ -492,7 +492,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"Chrono/Preview Content\"";
-				DEVELOPMENT_TEAM = LL6476HKHT;
+				DEVELOPMENT_TEAM = 4Z782ZN82J;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Chrono/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -500,7 +500,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ChronoFit.Chrono;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.chronofit.chrono;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -515,7 +515,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Chrono/Preview Content\"";
-				DEVELOPMENT_TEAM = LL6476HKHT;
+				DEVELOPMENT_TEAM = 4Z782ZN82J;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Chrono/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -523,7 +523,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ChronoFit.Chrono;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.chronofit.chrono;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
