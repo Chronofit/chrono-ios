@@ -5,12 +5,11 @@
 //  Created by Sagar on 2021-06-15.
 //
 
-import SwiftUI
 import Firebase
+import SwiftUI
 
 @main
 struct ChronoApp: App {
-    
     init() {
         FirebaseApp.configure()
         
@@ -20,11 +19,10 @@ struct ChronoApp: App {
           AnalyticsParameterContentType: "cont",
         ])
     }
-    
+
     var body: some Scene {
         WindowGroup {
             SplashScreen()
         }
     }
-    
 }

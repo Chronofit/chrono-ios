@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1B246AB3267982130062156B /* ChronoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B246AB2267982130062156B /* ChronoApp.swift */; };
-		1B246AB5267982130062156B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B246AB4267982130062156B /* ContentView.swift */; };
 		1B246AB7267982170062156B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B246AB6267982170062156B /* Assets.xcassets */; };
 		1B246ABA267982170062156B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B246AB9267982170062156B /* Preview Assets.xcassets */; };
 		1B246ACC267987FB0062156B /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B246ACB267987FB0062156B /* Onboarding.swift */; };
@@ -28,7 +27,6 @@
 /* Begin PBXFileReference section */
 		1B246AAF267982130062156B /* Chrono.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chrono.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B246AB2267982130062156B /* ChronoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChronoApp.swift; sourceTree = "<group>"; };
-		1B246AB4267982130062156B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1B246AB6267982170062156B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B246AB9267982170062156B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1B246ABB267982170062156B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -90,7 +88,6 @@
 				1B246AC92679873F0062156B /* Common Elements */,
 				1B7E99C026953CDF006F07E8 /* GoogleService-Info.plist */,
 				1B246AB2267982130062156B /* ChronoApp.swift */,
-				1B246AB4267982130062156B /* ContentView.swift */,
 				1B246AB6267982170062156B /* Assets.xcassets */,
 				1B246ABB267982170062156B /* Info.plist */,
 				1B246AB8267982170062156B /* Preview Content */,
@@ -315,7 +312,6 @@
 				1B246ACC267987FB0062156B /* Onboarding.swift in Sources */,
 				1B246AD02679881A0062156B /* Circuits.swift in Sources */,
 				1B824B472681822100434070 /* SplashScreen.swift in Sources */,
-				1B246AB5267982130062156B /* ContentView.swift in Sources */,
 				1B246AD826798A990062156B /* NavigationBar.swift in Sources */,
 				1B246AB3267982130062156B /* ChronoApp.swift in Sources */,
 				1B246AD6267989C80062156B /* Hex Color.swift in Sources */,
