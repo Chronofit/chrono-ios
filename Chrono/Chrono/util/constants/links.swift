@@ -7,8 +7,8 @@
 
 import Foundation
 struct links {
-    static let privacy_page_link = "https://chronofit.herokuapp.com/privacyPolicy"
-    static let discord_invite_link = "https://discord.gg/UbWrRxwkgR"
-    static let app_rating_primary_link = "TODO"
-    static let app_rating_secondary_link = "TODO"
+    static let privacyPageLink = "https://chronofit.herokuapp.com/privacyPolicy"
+    static let discordInviteLink = "https://discord.gg/UbWrRxwkgR"
+    static let appRatingPrimaryLink = "TODO"
+    static let appRatingSecondaryLink = "TODO"
 }
