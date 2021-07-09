@@ -33,7 +33,6 @@ struct Circuit_Row: View {
                 Leading {
                     Text("\(sets) Sets")
                 }
-
                 HStack {
                     BottomLabel(restTime: 50)
                         .padding(.trailing)
@@ -49,7 +48,6 @@ struct Circuit_Row: View {
 
 private struct BottomLabel: View {
     @State var restTime = 10
-
     var body: some View {
         HStack {
             Image(systemName: "line.horizontal.3")

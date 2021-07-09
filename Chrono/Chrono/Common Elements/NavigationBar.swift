@@ -10,7 +10,7 @@ import UIKit
 
 struct NavBar: ViewModifier {
     @State var title: String
-
+    
     func body(content: Content) -> some View {
         content
             .navigationTitle(title)
@@ -21,7 +21,7 @@ struct NavBar: ViewModifier {
 
 struct InlineNavBar: ViewModifier {
     @State var title: String
-
+    
     func body(content: Content) -> some View {
         content
             .navigationTitle(title)
@@ -31,6 +31,7 @@ struct InlineNavBar: ViewModifier {
 }
 
 struct NavigationBarColor: ViewModifier {
+
     init(backgroundColor: UIColor, tintColor: UIColor) {
         let coloredAppearance = UINavigationBarAppearance()
         coloredAppearance.configureWithOpaqueBackground()
@@ -43,10 +44,11 @@ struct NavigationBarColor: ViewModifier {
         UINavigationBar.appearance().compactAppearance = coloredAppearance
         UINavigationBar.appearance().tintColor = tintColor
     }
-
+    
     func body(content: Content) -> some View {
         content
     }
+    
 }
 
 extension View {
@@ -54,3 +56,4 @@ extension View {
         modifier(NavigationBarColor(backgroundColor: backgroundColor, tintColor: tintColor))
     }
 }
+
