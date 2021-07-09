@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "ic_machine.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

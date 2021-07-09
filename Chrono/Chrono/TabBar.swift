@@ -14,21 +14,19 @@ struct TabBar: View {
                 Stopwatch()
             }
             .tabItem {
-                Label("Stopwatch", systemImage: "stopwatch")
+                Label("Stopwatch", image: "timer_black")
             }
-
             NavigationView {
                 Circuits()
             }
             .tabItem {
-                Label("Circuits", systemImage: "heart")
+                Label("Circuits", image: "fitness_tab_black")
             }
-
             NavigationView {
                 Settings()
             }
             .tabItem {
-                Label("Settings", systemImage: "gearshape.fill")
+                Label("Settings", image: "settings_black")
             }
         }
     }
@@ -37,6 +35,6 @@ struct TabBar: View {
 struct TabBar_Previews: PreviewProvider {
     static var previews: some View {
         TabBar()
-            .preferredColorScheme(.dark)
+            .preferredColorScheme(.light)
     }
 }
