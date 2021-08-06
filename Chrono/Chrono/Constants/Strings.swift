@@ -15,6 +15,7 @@ struct Strings {
     static let pause = "Pause"
     static let resume = "Resume"
     static let lap = "Lap"
+    static let reset = "Reset"
     static let chronometer = "Chronometer"
 
     // Circuit Create
