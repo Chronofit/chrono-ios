@@ -13,7 +13,8 @@ struct Stopwatch: View {
     var body: some View {
         VStack {
             Text(Strings.stopwatch)
-                .font(.title)
+                .font(.system(size: 40, weight: .heavy, design: .default))
+
             Spacer()
             ForEach(stopwatch.laps, id: \.self) { x in
                 HStack {
@@ -23,18 +24,33 @@ struct Stopwatch: View {
             }
 
             Text("\(stopwatch.totalTime.toTime())")
+                .font(.system(size: 70))
+
+            // Buttons for idle state
             if stopwatch.isIdle {
                 Button(action: { stopwatch.start() }, label: {
                     Text(Strings.start)
                         .padding()
+                        .frame(width: 125, height: 50)
                 })
+                    .foregroundColor(.white)
+                    .background(Color("resume_green"))
+                    .cornerRadius(13.0)
+                    .padding()
             }
+
+            // Buttons for running state
             if stopwatch.isRunning {
                 HStack {
                     Button(action: { stopwatch.pause() }, label: {
                         Text(Strings.stop)
                             .padding()
+                            .frame(width: 125, height: 50)
                     })
+                        .foregroundColor(.white)
+                        .background(Color("stop_red"))
+                        .cornerRadius(13.0)
+                        .padding()
 
                     Button(action: {
                         withAnimation {
@@ -43,20 +59,37 @@ struct Stopwatch: View {
                     }, label: {
                         Text(Strings.lap)
                             .padding()
+                            .frame(width: 125, height: 50)
                     })
+                        .foregroundColor(.white)
+                        .background(Color("lap_blue"))
+                        .cornerRadius(13.0)
+                        .padding()
                 }
             }
+
+            // Buttons for paused state
             if stopwatch.isPaused {
                 HStack {
                     Button(action: { stopwatch.start() }, label: {
                         Text(Strings.resume)
                             .padding()
+                            .frame(width: 125, height: 50)
                     })
+                        .foregroundColor(.white)
+                        .background(Color("resume_green"))
+                        .cornerRadius(13.0)
+                        .padding()
 
                     Button(action: { stopwatch.reset() }, label: {
                         Text(Strings.reset)
                             .padding()
+                            .frame(width: 125, height: 50)
                     })
+                        .foregroundColor(.white)
+                        .background(Color("reset_grey"))
+                        .cornerRadius(13.0)
+                        .padding()
                 }
             }
         }
