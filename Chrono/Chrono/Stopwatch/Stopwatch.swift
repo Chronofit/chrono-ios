@@ -14,17 +14,45 @@ struct Stopwatch: View {
         VStack {
             Text(Strings.stopwatch)
                 .font(.system(size: 40, weight: .heavy, design: .default))
+                .padding()
 
             Spacer()
-            ForEach(stopwatch.laps, id: \.self) { x in
-                HStack {
-                    Text(x.runningTime.toTime())
-                    Text(x.totalTime.toTime())
+            ScrollViewReader { scrollView in
+                ScrollView(.vertical) {
+                    ForEach(stopwatch.laps.indices, id: \.self) { index in
+                        LazyHStack {
+                            Text(String(index + 1))
+                            Text(stopwatch.laps[index].runningTime.toTime())
+                                .font(.monospacedDigit(.system(size: 20))())
+                            Text(stopwatch.laps[index].totalTime.toTime())
+                                .font(.monospacedDigit(.system(size: 20))())
+                        }
+                        .frame(maxWidth: .infinity)
+                        .animation(.default)
+                        .onAppear {
+                            scrollView.scrollTo(stopwatch.laps.endIndex - 1)
+                        }
+                    }
                 }
             }
 
+//            ScrollView{
+//                ForEach(stopwatch.laps.indices, id: \.self) { index in
+//                HStack {
+//                    Text(String(index+1))
+//                    Text(stopwatch.laps[index].runningTime.toTime())
+//                        .font(.monospacedDigit(.system(size:20))())
+//                    Text(stopwatch.laps[index].totalTime.toTime())
+//                        .font(.monospacedDigit(.system(size:20))())
+//                }
+//                .frame(maxWidth: .infinity)
+//            }
+//                .animation(/*@START_MENU_TOKEN@*/.easeIn/*@END_MENU_TOKEN@*/)
+//
+//            }
+
             Text("\(stopwatch.totalTime.toTime())")
-                .font(.system(size: 70))
+                .font(.monospacedDigit(.system(size: 70))())
 
             // Buttons for idle state
             if stopwatch.isIdle {
@@ -92,7 +120,9 @@ struct Stopwatch: View {
                         .padding()
                 }
             }
-        }
+        }.frame(maxHeight: .infinity)
+//        .navigationBarTitle("Stopwatch")
+            .navigationBarHidden(true)
     }
 }
 
@@ -126,9 +156,9 @@ extension TimeInterval {
         let hours = Int(self / 3600)
 
         if hours > 0 {
-            return String(format: "%d:%.2d:%.2d:%.2d", hours, minutes, seconds, miliseconds)
+            return String(format: "%d:%.2d:%.2d.%.2d", hours, minutes, seconds, miliseconds)
         } else {
-            return String(format: "%.2d:%.2d:%.2d", minutes, seconds, miliseconds)
+            return String(format: "%.2d:%.2d.%.2d", minutes, seconds, miliseconds)
         }
     }
 }
