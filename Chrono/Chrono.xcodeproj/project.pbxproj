@@ -27,6 +27,15 @@
 		1B6F5359268449A60020D3C3 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6F5358268449A60020D3C3 /* ViewRouter.swift */; };
 		1B7E99C126953CDF006F07E8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B7E99C026953CDF006F07E8 /* GoogleService-Info.plist */; };
 		1B824B472681822100434070 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B824B462681822100434070 /* SplashScreen.swift */; };
+		1B8479B72697F626002A3FAC /* opensans_regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1B8479AF2697F625002A3FAC /* opensans_regular.ttf */; };
+		1B8479B82697F626002A3FAC /* nunito_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1B8479B02697F625002A3FAC /* nunito_bold.ttf */; };
+		1B8479B92697F626002A3FAC /* opensans_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1B8479B12697F625002A3FAC /* opensans_bold.ttf */; };
+		1B8479BA2697F626002A3FAC /* nunito_semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1B8479B22697F626002A3FAC /* nunito_semibold.ttf */; };
+		1B8479BB2697F626002A3FAC /* opensans_light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1B8479B32697F626002A3FAC /* opensans_light.ttf */; };
+		1B8479BC2697F626002A3FAC /* opensans_semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1B8479B42697F626002A3FAC /* opensans_semibold.ttf */; };
+		1B8479BD2697F626002A3FAC /* nunito_light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1B8479B52697F626002A3FAC /* nunito_light.ttf */; };
+		1B8479BE2697F626002A3FAC /* nunito_regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1B8479B62697F626002A3FAC /* nunito_regular.ttf */; };
+		1B8479C02697F7A1002A3FAC /* FontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8479BF2697F7A1002A3FAC /* FontModifier.swift */; };
 		1E874396AD7AD77BFB8358EE /* Pods_Chrono.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA824E4FEB97E8DF52E5CE1 /* Pods_Chrono.framework */; };
 		47580FE626966D12002CF7AA /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47580FE526966D12002CF7AA /* Strings.swift */; };
 		47580FE826966D34002CF7AA /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47580FE726966D34002CF7AA /* Links.swift */; };
@@ -54,6 +63,15 @@
 		1B6F5358268449A60020D3C3 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 		1B7E99C026953CDF006F07E8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		1B824B462681822100434070 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		1B8479AF2697F625002A3FAC /* opensans_regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = opensans_regular.ttf; sourceTree = "<group>"; };
+		1B8479B02697F625002A3FAC /* nunito_bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = nunito_bold.ttf; sourceTree = "<group>"; };
+		1B8479B12697F625002A3FAC /* opensans_bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = opensans_bold.ttf; sourceTree = "<group>"; };
+		1B8479B22697F626002A3FAC /* nunito_semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = nunito_semibold.ttf; sourceTree = "<group>"; };
+		1B8479B32697F626002A3FAC /* opensans_light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = opensans_light.ttf; sourceTree = "<group>"; };
+		1B8479B42697F626002A3FAC /* opensans_semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = opensans_semibold.ttf; sourceTree = "<group>"; };
+		1B8479B52697F626002A3FAC /* nunito_light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = nunito_light.ttf; sourceTree = "<group>"; };
+		1B8479B62697F626002A3FAC /* nunito_regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = nunito_regular.ttf; sourceTree = "<group>"; };
+		1B8479BF2697F7A1002A3FAC /* FontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontModifier.swift; sourceTree = "<group>"; };
 		2176FA5421E9C0ECB29B8680 /* Pods-Chrono.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chrono.debug.xcconfig"; path = "Target Support Files/Pods-Chrono/Pods-Chrono.debug.xcconfig"; sourceTree = "<group>"; };
 		47580FE526966D12002CF7AA /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		47580FE726966D34002CF7AA /* Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
@@ -97,8 +115,8 @@
 			children = (
 				1B6F5358268449A60020D3C3 /* ViewRouter.swift */,
 				1B824B462681822100434070 /* SplashScreen.swift */,
-				47C170D326817D30005AC488 /* Constants */,
 				1B246AD926798AC10062156B /* TabBar.swift */,
+				47C170D326817D30005AC488 /* Constants */,
 				1B246AC5267986760062156B /* Onboarding */,
 				1B246AC6267986C80062156B /* Stopwatch */,
 				1B246AC7267987130062156B /* Circuits */,
@@ -107,6 +125,7 @@
 				1B7E99C026953CDF006F07E8 /* GoogleService-Info.plist */,
 				1B246AB2267982130062156B /* ChronoApp.swift */,
 				1B246AB6267982170062156B /* Assets.xcassets */,
+				1B8479AE2697F607002A3FAC /* Fonts */,
 				1B246ABB267982170062156B /* Info.plist */,
 				1B246AB8267982170062156B /* Preview Content */,
 			);
@@ -174,6 +193,22 @@
 				1B6F53512682F8DE0020D3C3 /* onboard_welcome.json */,
 			);
 			path = Animations;
+			sourceTree = "<group>";
+		};
+		1B8479AE2697F607002A3FAC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1B8479BF2697F7A1002A3FAC /* FontModifier.swift */,
+				1B8479B02697F625002A3FAC /* nunito_bold.ttf */,
+				1B8479B52697F626002A3FAC /* nunito_light.ttf */,
+				1B8479B62697F626002A3FAC /* nunito_regular.ttf */,
+				1B8479B22697F626002A3FAC /* nunito_semibold.ttf */,
+				1B8479B12697F625002A3FAC /* opensans_bold.ttf */,
+				1B8479B32697F626002A3FAC /* opensans_light.ttf */,
+				1B8479AF2697F625002A3FAC /* opensans_regular.ttf */,
+				1B8479B42697F626002A3FAC /* opensans_semibold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		47C170D326817D30005AC488 /* Constants */ = {
@@ -270,8 +305,16 @@
 			files = (
 				1B6F53542682F8DE0020D3C3 /* onboard_final.json in Resources */,
 				1B6F53532682F8DE0020D3C3 /* onboard_welcome.json in Resources */,
+				1B8479BB2697F626002A3FAC /* opensans_light.ttf in Resources */,
+				1B8479B72697F626002A3FAC /* opensans_regular.ttf in Resources */,
+				1B8479BD2697F626002A3FAC /* nunito_light.ttf in Resources */,
+				1B8479BA2697F626002A3FAC /* nunito_semibold.ttf in Resources */,
 				1B246ABA267982170062156B /* Preview Assets.xcassets in Resources */,
+				1B8479BE2697F626002A3FAC /* nunito_regular.ttf in Resources */,
+				1B8479B92697F626002A3FAC /* opensans_bold.ttf in Resources */,
+				1B8479B82697F626002A3FAC /* nunito_bold.ttf in Resources */,
 				1B7E99C126953CDF006F07E8 /* GoogleService-Info.plist in Resources */,
+				1B8479BC2697F626002A3FAC /* opensans_semibold.ttf in Resources */,
 				1B246AB7267982170062156B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,6 +388,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B8479C02697F7A1002A3FAC /* FontModifier.swift in Sources */,
 				1B6F5359268449A60020D3C3 /* ViewRouter.swift in Sources */,
 				1B246ADC2679910F0062156B /* Circuit Row.swift in Sources */,
 				1B246AD4267988380062156B /* Leading.swift in Sources */,
@@ -492,7 +536,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"Chrono/Preview Content\"";
-				DEVELOPMENT_TEAM = 4Z782ZN82J;
+				DEVELOPMENT_TEAM = LL6476HKHT;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Chrono/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -515,7 +559,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Chrono/Preview Content\"";
-				DEVELOPMENT_TEAM = 4Z782ZN82J;
+				DEVELOPMENT_TEAM = LL6476HKHT;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Chrono/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;

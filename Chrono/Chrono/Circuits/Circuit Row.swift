@@ -8,60 +8,75 @@
 import SwiftUI
 
 struct Circuit_Row: View {
-    @State var sets = 5
+    
+    @State var name: String
+    @State var image: String
+    
+    //Will get placed from object
+    @State var setCount: Int
+    @State var rest: Int
+    @State var work: Int
+
 
     var body: some View {
-        HStack {
-            Image(systemName: "heart.fill")
+        HStack(alignment: .center, spacing: 16){
+            Image(image)
                 .resizable()
-                .frame(width: 80, height: 80, alignment: .center)
-                .padding()
-
+                .frame(width: 50, height: 50, alignment: .center)
+            
             VStack {
-                HStack {
-                    Text("Jump Rope Warmup")
-                        .bold()
-                        .font(.body)
-
-                    Spacer()
-
-                    Image(systemName: "line.horizontal.3")
-                        .resizable()
-                        .frame(width: 10, height: 15, alignment: .center)
-                }
-
                 Leading {
-                    Text("\(sets) Sets")
+                    Text(name)
+                        .customFont(fontGroup: .nunito, fontStyle: .regular, size: 22)
+                        .foregroundColor(Color("CircuitCard-Primary"))
                 }
-                HStack {
-                    BottomLabel(restTime: 50)
-                        .padding(.trailing)
-                    BottomLabel()
+                Leading {
+                    Text("\(setCount) Sets")
+                        .customFont(fontGroup: .nunito, fontStyle: .regular, size: 14)
+                        .foregroundColor(Color("CircuitCard-Secondary"))
+                }
+                HStack{
+                    BottomLabel(time: rest, image: "timer_black", type: "Rest")
                     Spacer()
+                    BottomLabel(time: work, image: "timer_black", type: "Work")
                 }
-                .padding(.top)
+                .offset(x: -1, y: 0)
             }
         }
         .padding()
+        .background(Color(UIColor.systemBackground))
+        .cornerRadius(10)
+        .shadow(color: .secondary, radius: 1.5, x: 0, y: 1.0)
+
     }
 }
 
 private struct BottomLabel: View {
-    @State var restTime = 10
+    var time: Int
+    var image: String
+    var type: String
+    
     var body: some View {
-        HStack {
-            Image(systemName: "line.horizontal.3")
+        HStack(alignment: .bottom, spacing: 4) {
+            Image(image)
                 .resizable()
-                .frame(width: 10, height: 15, alignment: .center)
-            Text("Rest: \(restTime)s")
+                .frame(width: 18, height: 18, alignment: .center)
+                .foregroundColor(Color("CircuitCard-Primary"))
+            Text("\(type) \(time)s")
+                .customFont(fontGroup: .nunito, fontStyle: .regular, size: 14)
+                .foregroundColor(Color("CircuitCard-Primary"))
         }
     }
 }
 
 struct Circuit_Row_Previews: PreviewProvider {
     static var previews: some View {
-        Circuit_Row()
-            .preferredColorScheme(.dark)
-            .previewLayout(.sizeThatFits)
+        VStack{
+            Circuit_Row(name: "Jump Rope Warmup", image: "ic_jump_rope", setCount: 5, rest: 10, work: 15)
+                .padding(.bottom, 5)
+            Circuit_Row(name: "Jump Rope Warmup", image: "ic_jump_rope", setCount: 5, rest: 10, work: 15)
+        }
+        .preferredColorScheme(.light)
+        .padding(.horizontal)
     }
 }
