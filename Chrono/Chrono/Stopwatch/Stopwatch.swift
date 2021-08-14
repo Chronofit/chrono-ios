@@ -75,9 +75,9 @@ struct IdleStopwatchControl: View {
     var body: some View {
         Button(action: { stopwatch.start() }, label: {
             Text(Strings.start)
-                .StopwatchBtnLabelStyle()
+                .stopwatchBtnLabelStyle()
         })
-            .StopwatchBtnStyle(with: "resume_green")
+            .stopwatchBtnStyle(with: "resume_green")
     }
 }
 
@@ -87,9 +87,9 @@ struct RunningStopwatchControl: View {
         HStack {
             Button(action: { stopwatch.pause() }, label: {
                 Text(Strings.stop)
-                    .StopwatchBtnLabelStyle()
+                    .stopwatchBtnLabelStyle()
             })
-                .StopwatchBtnStyle(with: "stop_red")
+                .stopwatchBtnStyle(with: "stop_red")
 
             Button(action: {
                 withAnimation(.spring()) {
@@ -97,9 +97,9 @@ struct RunningStopwatchControl: View {
                 }
             }, label: {
                 Text(Strings.lap)
-                    .StopwatchBtnLabelStyle()
+                    .stopwatchBtnLabelStyle()
             })
-                .StopwatchBtnStyle(with: "lap_blue")
+                .stopwatchBtnStyle(with: "lap_blue")
         }
     }
 }
@@ -111,15 +111,15 @@ struct PausedStopwatchControl: View {
         HStack {
             Button(action: { stopwatch.start() }, label: {
                 Text(Strings.resume)
-                    .StopwatchBtnLabelStyle()
+                    .stopwatchBtnLabelStyle()
             })
-                .StopwatchBtnStyle(with: "resume_green")
+                .stopwatchBtnStyle(with: "resume_green")
 
             Button(action: { stopwatch.reset() }, label: {
                 Text(Strings.reset)
-                    .StopwatchBtnLabelStyle()
+                    .stopwatchBtnLabelStyle()
             })
-                .StopwatchBtnStyle(with: "reset_grey")
+                .stopwatchBtnStyle(with: "reset_grey")
         }
     }
 }
@@ -133,7 +133,7 @@ struct StopwatchBtnLabelModifier: ViewModifier {
 }
 
 extension Text {
-    func StopwatchBtnLabelStyle() -> some View {
+    func stopwatchBtnLabelStyle() -> some View {
         modifier(StopwatchBtnLabelModifier())
     }
 }
@@ -150,7 +150,7 @@ struct StopwatchBtnModifier: ViewModifier {
 }
 
 extension Button {
-    func StopwatchBtnStyle(with backgroundColor: String) -> some View {
+    func stopwatchBtnStyle(with backgroundColor: String) -> some View {
         modifier(StopwatchBtnModifier(customBackgroundColor: backgroundColor))
     }
 }

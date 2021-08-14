@@ -25,7 +25,7 @@ class StopwatchManager: ObservableObject {
     private var stopwatch: Timer?
 
     var backgroundTime: Date?
-    var background_forground_timelaps: Double?
+    var backgroundForgroundTimelaps: Double?
 
     deinit {
         NotificationCenter.default.removeObserver(self, name: UIApplication.didEnterBackgroundNotification, object: nil)
@@ -75,15 +75,15 @@ class StopwatchManager: ObservableObject {
 
     @objc fileprivate func didEnterBackgroundNotification() {
         print("Backgrounded")
-        background_forground_timelaps = nil
+        backgroundForgroundTimelaps = nil
         backgroundTime = Date()
     }
 
     @objc fileprivate func willEnterForegroundNotification() {
         print("Foreground")
-        background_forground_timelaps = Date().timeIntervalSince(backgroundTime ?? Date())
+        backgroundForgroundTimelaps = Date().timeIntervalSince(backgroundTime ?? Date())
         backgroundTime = nil
-        totalTime += background_forground_timelaps ?? 0
-        currentLap += background_forground_timelaps ?? 0
+        totalTime += backgroundForgroundTimelaps ?? 0
+        currentLap += backgroundForgroundTimelaps ?? 0
     }
 }
