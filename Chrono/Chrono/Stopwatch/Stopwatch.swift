@@ -13,116 +13,145 @@ struct Stopwatch: View {
     var body: some View {
         VStack {
             Text(Strings.stopwatch)
-                .font(.system(size: 40, weight: .heavy, design: .default))
                 .padding()
+                .font(.system(size: 40, weight: .semibold, design: .default))
 
             Spacer()
             ScrollViewReader { scrollView in
                 ScrollView(.vertical) {
                     ForEach(stopwatch.laps.indices, id: \.self) { index in
-                        LazyHStack {
-                            Text(String(index + 1))
-                            Text(stopwatch.laps[index].runningTime.toTime())
-                                .font(.monospacedDigit(.system(size: 20))())
-                            Text(stopwatch.laps[index].totalTime.toTime())
-                                .font(.monospacedDigit(.system(size: 20))())
-                        }
-                        .frame(maxWidth: .infinity)
-                        .animation(.default)
-                        .onAppear {
-                            scrollView.scrollTo(stopwatch.laps.endIndex - 1)
-                        }
+                        LapItem(lapNumber: index + 1, runningTime: stopwatch.laps[index].runningTime.toTime(), totalTime: stopwatch.laps[index].totalTime.toTime())
+                            .onAppear {
+                                withAnimation(.linear) {
+                                    scrollView.scrollTo(stopwatch.laps.endIndex - 1)
+                                }
+                            }
                     }
                 }
             }
-
-//            ScrollView{
-//                ForEach(stopwatch.laps.indices, id: \.self) { index in
-//                HStack {
-//                    Text(String(index+1))
-//                    Text(stopwatch.laps[index].runningTime.toTime())
-//                        .font(.monospacedDigit(.system(size:20))())
-//                    Text(stopwatch.laps[index].totalTime.toTime())
-//                        .font(.monospacedDigit(.system(size:20))())
-//                }
-//                .frame(maxWidth: .infinity)
-//            }
-//                .animation(/*@START_MENU_TOKEN@*/.easeIn/*@END_MENU_TOKEN@*/)
-//
-//            }
 
             Text("\(stopwatch.totalTime.toTime())")
                 .font(.monospacedDigit(.system(size: 70))())
 
             // Buttons for idle state
             if stopwatch.isIdle {
-                Button(action: { stopwatch.start() }, label: {
-                    Text(Strings.start)
-                        .padding()
-                        .frame(width: 125, height: 50)
-                })
-                    .foregroundColor(.white)
-                    .background(Color("resume_green"))
-                    .cornerRadius(13.0)
-                    .padding()
+                IdleStopwatchControl(stopwatch: stopwatch)
             }
 
             // Buttons for running state
             if stopwatch.isRunning {
-                HStack {
-                    Button(action: { stopwatch.pause() }, label: {
-                        Text(Strings.stop)
-                            .padding()
-                            .frame(width: 125, height: 50)
-                    })
-                        .foregroundColor(.white)
-                        .background(Color("stop_red"))
-                        .cornerRadius(13.0)
-                        .padding()
-
-                    Button(action: {
-                        withAnimation {
-                            stopwatch.lap()
-                        }
-                    }, label: {
-                        Text(Strings.lap)
-                            .padding()
-                            .frame(width: 125, height: 50)
-                    })
-                        .foregroundColor(.white)
-                        .background(Color("lap_blue"))
-                        .cornerRadius(13.0)
-                        .padding()
-                }
+                RunningStopwatchControl(stopwatch: stopwatch)
             }
 
             // Buttons for paused state
             if stopwatch.isPaused {
-                HStack {
-                    Button(action: { stopwatch.start() }, label: {
-                        Text(Strings.resume)
-                            .padding()
-                            .frame(width: 125, height: 50)
-                    })
-                        .foregroundColor(.white)
-                        .background(Color("resume_green"))
-                        .cornerRadius(13.0)
-                        .padding()
-
-                    Button(action: { stopwatch.reset() }, label: {
-                        Text(Strings.reset)
-                            .padding()
-                            .frame(width: 125, height: 50)
-                    })
-                        .foregroundColor(.white)
-                        .background(Color("reset_grey"))
-                        .cornerRadius(13.0)
-                        .padding()
-                }
+                PausedStopwatchControl(stopwatch: stopwatch)
             }
-        }.frame(maxHeight: .infinity)
-//        .navigationBarTitle("Stopwatch")
-            .navigationBarHidden(true)
+        }
+        .frame(maxHeight: .infinity)
+        .navigationBarHidden(true)
+    }
+}
+
+struct LapItem: View {
+    var lapNumber: Int
+    var runningTime: String
+    var totalTime: String
+
+    var body: some View {
+        LazyHStack {
+            Text(String(lapNumber))
+            Text(runningTime)
+                .font(.monospacedDigit(.system(size: 20))())
+            Text(totalTime)
+                .font(.monospacedDigit(.system(size: 20))())
+        }
+        .frame(maxWidth: .infinity)
+    }
+}
+
+struct IdleStopwatchControl: View {
+    var stopwatch: StopwatchManager
+    var body: some View {
+        Button(action: { stopwatch.start() }, label: {
+            Text(Strings.start)
+                .StopwatchBtnLabelStyle()
+        })
+            .StopwatchBtnStyle(with: "resume_green")
+    }
+}
+
+struct RunningStopwatchControl: View {
+    var stopwatch: StopwatchManager
+    var body: some View {
+        HStack {
+            Button(action: { stopwatch.pause() }, label: {
+                Text(Strings.stop)
+                    .StopwatchBtnLabelStyle()
+            })
+                .StopwatchBtnStyle(with: "stop_red")
+
+            Button(action: {
+                withAnimation(.spring()) {
+                    stopwatch.lap()
+                }
+            }, label: {
+                Text(Strings.lap)
+                    .StopwatchBtnLabelStyle()
+            })
+                .StopwatchBtnStyle(with: "lap_blue")
+        }
+    }
+}
+
+struct PausedStopwatchControl: View {
+    var stopwatch: StopwatchManager
+
+    var body: some View {
+        HStack {
+            Button(action: { stopwatch.start() }, label: {
+                Text(Strings.resume)
+                    .StopwatchBtnLabelStyle()
+            })
+                .StopwatchBtnStyle(with: "resume_green")
+
+            Button(action: { stopwatch.reset() }, label: {
+                Text(Strings.reset)
+                    .StopwatchBtnLabelStyle()
+            })
+                .StopwatchBtnStyle(with: "reset_grey")
+        }
+    }
+}
+
+struct StopwatchBtnLabelModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .padding()
+            .frame(width: 125, height: 50, alignment: /*@START_MENU_TOKEN@*/ .center/*@END_MENU_TOKEN@*/)
+    }
+}
+
+extension Text {
+    func StopwatchBtnLabelStyle() -> some View {
+        modifier(StopwatchBtnLabelModifier())
+    }
+}
+
+struct StopwatchBtnModifier: ViewModifier {
+    var customBackgroundColor: String
+    func body(content: Content) -> some View {
+        content
+            .foregroundColor(.white)
+            .background(Color(customBackgroundColor))
+            .cornerRadius(13.0)
+            .padding()
+    }
+}
+
+extension Button {
+    func StopwatchBtnStyle(with backgroundColor: String) -> some View {
+        modifier(StopwatchBtnModifier(customBackgroundColor: backgroundColor))
     }
 }
 
