@@ -66,6 +66,7 @@ struct Onboarding: View {
                 .padding(.horizontal)
                 .padding(.bottom)
         }
+        .background(Color("Velvet").ignoresSafeArea())
     }
 }
 
@@ -127,7 +128,7 @@ struct Onboarding_BottomButtons: View {
                     withAnimation { selectedPage += 1 }
                 }, label: {
                     Text("Next")
-                        .foregroundColor(.accentColor)
+                        .foregroundColor(.init("Lavender"))
                         .font(.system(size: 18, weight: .semibold, design: .default))
                         .padding(.trailing)
                 })
@@ -151,7 +152,7 @@ struct Onboarding_BottomButtons: View {
                     })
                 }
                 Spacer()
-                CapsuleButton(color: .accentColor) {
+                CapsuleButton(color: .init("Lavender")) {
                     Button(action: {
                         UserDefaults.standard.set(true, forKey: "didLaunchBefore")
                         withAnimation {
@@ -188,7 +189,6 @@ public struct CapsuleButton<Content: View>: View {
                 Capsule()
                     .foregroundColor(color)
                     .frame(height: 50, alignment: .center)
-                    .shadow(color: colorScheme == .light ? Color(hex: "DFE0DF") : .clear, radius: 2, x: 0.0, y: 2.0)
             )
     }
 }
@@ -196,7 +196,6 @@ public struct CapsuleButton<Content: View>: View {
 struct Onboarding_Previews: PreviewProvider {
     static var previews: some View {
         Onboarding()
-            .previewDevice("iPhone SE (2nd generation)")
             .preferredColorScheme(.dark)
     }
 }

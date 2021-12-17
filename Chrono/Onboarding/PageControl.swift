@@ -24,8 +24,8 @@ struct PageControl: UIViewRepresentable {
 
         pageControl.currentPage = currentPage
         pageControl.numberOfPages = numberOfPages
-        pageControl.currentPageIndicatorTintColor = UIColor(.accentColor)
-        pageControl.pageIndicatorTintColor = UIColor(Color(hex: "DFE0DF"))
+        pageControl.currentPageIndicatorTintColor = UIColor(Color("Lavender"))
+        pageControl.pageIndicatorTintColor = UIColor(Color("Plum"))
         return pageControl
     }
 

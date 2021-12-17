@@ -14,7 +14,6 @@
 		1B246ACE2679880E0062156B /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B246ACD2679880E0062156B /* Stopwatch.swift */; };
 		1B246AD02679881A0062156B /* Circuits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B246ACF2679881A0062156B /* Circuits.swift */; };
 		1B246AD2267988240062156B /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B246AD1267988240062156B /* Settings.swift */; };
-		1B246AD4267988380062156B /* Leading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B246AD3267988380062156B /* Leading.swift */; };
 		1B246AD6267989C80062156B /* Hex Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B246AD5267989C80062156B /* Hex Color.swift */; };
 		1B246AD826798A990062156B /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B246AD726798A990062156B /* NavigationBar.swift */; };
 		1B246ADA26798AC10062156B /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B246AD926798AC10062156B /* TabBar.swift */; };
@@ -30,6 +29,7 @@
 		47580FE626966D12002CF7AA /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47580FE526966D12002CF7AA /* Strings.swift */; };
 		47580FE826966D34002CF7AA /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47580FE726966D34002CF7AA /* Links.swift */; };
 		E5CC3B74276C295500E25BF7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5CC3B73276C295500E25BF7 /* GoogleService-Info.plist */; };
+		E5CC3B86276C388D00E25BF7 /* DarkModeModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CC3B85276C388D00E25BF7 /* DarkModeModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,7 +42,6 @@
 		1B246ACD2679880E0062156B /* Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
 		1B246ACF2679881A0062156B /* Circuits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circuits.swift; sourceTree = "<group>"; };
 		1B246AD1267988240062156B /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
-		1B246AD3267988380062156B /* Leading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leading.swift; sourceTree = "<group>"; };
 		1B246AD5267989C80062156B /* Hex Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Hex Color.swift"; sourceTree = "<group>"; };
 		1B246AD726798A990062156B /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		1B246AD926798AC10062156B /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
@@ -59,6 +58,7 @@
 		6EA824E4FEB97E8DF52E5CE1 /* Pods_Chrono.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chrono.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AFB24C9EE1D9923B8113AEE /* Pods-Chrono.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chrono.release.xcconfig"; path = "Target Support Files/Pods-Chrono/Pods-Chrono.release.xcconfig"; sourceTree = "<group>"; };
 		E5CC3B73276C295500E25BF7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E5CC3B85276C388D00E25BF7 /* DarkModeModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +97,12 @@
 			children = (
 				1B6F5358268449A60020D3C3 /* ViewRouter.swift */,
 				1B824B462681822100434070 /* SplashScreen.swift */,
-				47C170D326817D30005AC488 /* Constants */,
 				1B246AD926798AC10062156B /* TabBar.swift */,
 				1B246AC5267986760062156B /* Onboarding */,
 				1B246AC6267986C80062156B /* Stopwatch */,
 				1B246AC7267987130062156B /* Circuits */,
 				1B246AC8267987240062156B /* Settings */,
+				47C170D326817D30005AC488 /* Constants */,
 				1B246AC92679873F0062156B /* Common Elements */,
 				E5CC3B73276C295500E25BF7 /* GoogleService-Info.plist */,
 				1B246AB2267982130062156B /* ChronoApp.swift */,
@@ -159,10 +159,10 @@
 		1B246AC92679873F0062156B /* Common Elements */ = {
 			isa = PBXGroup;
 			children = (
-				1B246AD3267988380062156B /* Leading.swift */,
 				1B246AD5267989C80062156B /* Hex Color.swift */,
 				1B246AD726798A990062156B /* NavigationBar.swift */,
 				1B6F534B2682F7E10020D3C3 /* LottieView.swift */,
+				E5CC3B85276C388D00E25BF7 /* DarkModeModifier.swift */,
 			);
 			path = "Common Elements";
 			sourceTree = "<group>";
@@ -347,13 +347,13 @@
 			files = (
 				1B6F5359268449A60020D3C3 /* ViewRouter.swift in Sources */,
 				1B246ADC2679910F0062156B /* Circuit Row.swift in Sources */,
-				1B246AD4267988380062156B /* Leading.swift in Sources */,
 				1B246AD2267988240062156B /* Settings.swift in Sources */,
 				1B246ACC267987FB0062156B /* Onboarding.swift in Sources */,
 				1B246AD02679881A0062156B /* Circuits.swift in Sources */,
 				1B824B472681822100434070 /* SplashScreen.swift in Sources */,
 				47580FE826966D34002CF7AA /* Links.swift in Sources */,
 				47580FE626966D12002CF7AA /* Strings.swift in Sources */,
+				E5CC3B86276C388D00E25BF7 /* DarkModeModifier.swift in Sources */,
 				1B246AD826798A990062156B /* NavigationBar.swift in Sources */,
 				1B6F53562684246D0020D3C3 /* PageControl.swift in Sources */,
 				1B6F534C2682F7E10020D3C3 /* LottieView.swift in Sources */,

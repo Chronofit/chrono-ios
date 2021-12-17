@@ -12,17 +12,18 @@ import SwiftUI
 struct ChronoApp: App {
     init() {
         FirebaseApp.configure()
-        
+
         Analytics.logEvent(AnalyticsEventSelectContent, parameters: [
-          AnalyticsParameterItemID: "id-App Started)",
-          AnalyticsParameterItemName: "App Started",
-          AnalyticsParameterContentType: "cont",
+            AnalyticsParameterItemID: "id-App Started)",
+            AnalyticsParameterItemName: "App Started",
+            AnalyticsParameterContentType: "cont",
         ])
     }
 
     var body: some Scene {
         WindowGroup {
             SplashScreen()
+                .modifier(DarkModeModifier())
         }
     }
 }

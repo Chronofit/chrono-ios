@@ -29,19 +29,11 @@ struct SplashScreen: View {
 }
 
 private struct SplashView: View {
-    @Environment(\.colorScheme) var colorScheme
-
     var body: some View {
         ZStack {
-            if colorScheme == .dark {
-                Color("SplashScreen_DarkBg")
-                    .ignoresSafeArea()
-            } else {
-                LinearGradient(gradient: Gradient(colors: [Color("SplashScreen_LightGrad1"), Color("SplashScreen_LightGrad2")]), startPoint: .top, endPoint: .bottom)
-                    .ignoresSafeArea()
-            }
-
-            Image("SplashScreen_Logo")
+            Color("Velvet")
+                .ignoresSafeArea()
+            Image("AppIconName")
                 .padding()
                 .offset(x: 0, y: -40.0)
         }
