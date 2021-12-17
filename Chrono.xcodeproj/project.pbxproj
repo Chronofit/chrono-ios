@@ -25,11 +25,11 @@
 		1B6F53542682F8DE0020D3C3 /* onboard_final.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B6F53522682F8DE0020D3C3 /* onboard_final.json */; };
 		1B6F53562684246D0020D3C3 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6F53552684246D0020D3C3 /* PageControl.swift */; };
 		1B6F5359268449A60020D3C3 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6F5358268449A60020D3C3 /* ViewRouter.swift */; };
-		1B7E99C126953CDF006F07E8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B7E99C026953CDF006F07E8 /* GoogleService-Info.plist */; };
 		1B824B472681822100434070 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B824B462681822100434070 /* SplashScreen.swift */; };
 		1E874396AD7AD77BFB8358EE /* Pods_Chrono.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA824E4FEB97E8DF52E5CE1 /* Pods_Chrono.framework */; };
 		47580FE626966D12002CF7AA /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47580FE526966D12002CF7AA /* Strings.swift */; };
 		47580FE826966D34002CF7AA /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47580FE726966D34002CF7AA /* Links.swift */; };
+		E5CC3B74276C295500E25BF7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5CC3B73276C295500E25BF7 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,13 +52,13 @@
 		1B6F53522682F8DE0020D3C3 /* onboard_final.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = onboard_final.json; sourceTree = "<group>"; };
 		1B6F53552684246D0020D3C3 /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
 		1B6F5358268449A60020D3C3 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
-		1B7E99C026953CDF006F07E8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		1B824B462681822100434070 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		2176FA5421E9C0ECB29B8680 /* Pods-Chrono.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chrono.debug.xcconfig"; path = "Target Support Files/Pods-Chrono/Pods-Chrono.debug.xcconfig"; sourceTree = "<group>"; };
 		47580FE526966D12002CF7AA /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		47580FE726966D34002CF7AA /* Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
 		6EA824E4FEB97E8DF52E5CE1 /* Pods_Chrono.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chrono.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AFB24C9EE1D9923B8113AEE /* Pods-Chrono.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chrono.release.xcconfig"; path = "Target Support Files/Pods-Chrono/Pods-Chrono.release.xcconfig"; sourceTree = "<group>"; };
+		E5CC3B73276C295500E25BF7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +104,7 @@
 				1B246AC7267987130062156B /* Circuits */,
 				1B246AC8267987240062156B /* Settings */,
 				1B246AC92679873F0062156B /* Common Elements */,
-				1B7E99C026953CDF006F07E8 /* GoogleService-Info.plist */,
+				E5CC3B73276C295500E25BF7 /* GoogleService-Info.plist */,
 				1B246AB2267982130062156B /* ChronoApp.swift */,
 				1B246AB6267982170062156B /* Assets.xcassets */,
 				1B246ABB267982170062156B /* Info.plist */,
@@ -271,8 +271,8 @@
 				1B6F53542682F8DE0020D3C3 /* onboard_final.json in Resources */,
 				1B6F53532682F8DE0020D3C3 /* onboard_welcome.json in Resources */,
 				1B246ABA267982170062156B /* Preview Assets.xcassets in Resources */,
-				1B7E99C126953CDF006F07E8 /* GoogleService-Info.plist in Resources */,
 				1B246AB7267982170062156B /* Assets.xcassets in Resources */,
+				E5CC3B74276C295500E25BF7 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,7 +492,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"Chrono/Preview Content\"";
-				DEVELOPMENT_TEAM = 4Z782ZN82J;
+				DEVELOPMENT_TEAM = LL6476HKHT;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Chrono/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -515,7 +515,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Chrono/Preview Content\"";
-				DEVELOPMENT_TEAM = 4Z782ZN82J;
+				DEVELOPMENT_TEAM = LL6476HKHT;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Chrono/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
