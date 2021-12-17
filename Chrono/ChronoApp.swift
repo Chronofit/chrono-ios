@@ -23,6 +23,7 @@ struct ChronoApp: App {
     var body: some Scene {
         WindowGroup {
             SplashScreen()
+                .modifier(DarkModeModifier())
         }
     }
 }

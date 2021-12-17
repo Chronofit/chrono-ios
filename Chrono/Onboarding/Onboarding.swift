@@ -50,6 +50,7 @@ struct Onboarding: View {
 
     var body: some View {
         VStack {
+            
             TabView(selection: $selectedPage.animation()) {
                 ForEach(data.indices) { index in
                     Onboarding_Subview(data: data[index])
@@ -66,6 +67,7 @@ struct Onboarding: View {
                 .padding(.horizontal)
                 .padding(.bottom)
         }
+        .background(Color.init("Velvet").ignoresSafeArea())
     }
 }
 
@@ -196,7 +198,6 @@ public struct CapsuleButton<Content: View>: View {
 struct Onboarding_Previews: PreviewProvider {
     static var previews: some View {
         Onboarding()
-            .previewDevice("iPhone SE (2nd generation)")
             .preferredColorScheme(.dark)
     }
 }

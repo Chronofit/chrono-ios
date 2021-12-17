@@ -30,6 +30,7 @@
 		47580FE626966D12002CF7AA /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47580FE526966D12002CF7AA /* Strings.swift */; };
 		47580FE826966D34002CF7AA /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47580FE726966D34002CF7AA /* Links.swift */; };
 		E5CC3B74276C295500E25BF7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5CC3B73276C295500E25BF7 /* GoogleService-Info.plist */; };
+		E5CC3B86276C388D00E25BF7 /* DarkModeModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CC3B85276C388D00E25BF7 /* DarkModeModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		6EA824E4FEB97E8DF52E5CE1 /* Pods_Chrono.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chrono.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AFB24C9EE1D9923B8113AEE /* Pods-Chrono.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chrono.release.xcconfig"; path = "Target Support Files/Pods-Chrono/Pods-Chrono.release.xcconfig"; sourceTree = "<group>"; };
 		E5CC3B73276C295500E25BF7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E5CC3B85276C388D00E25BF7 /* DarkModeModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 				1B246AD5267989C80062156B /* Hex Color.swift */,
 				1B246AD726798A990062156B /* NavigationBar.swift */,
 				1B6F534B2682F7E10020D3C3 /* LottieView.swift */,
+				E5CC3B85276C388D00E25BF7 /* DarkModeModifier.swift */,
 			);
 			path = "Common Elements";
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 				1B824B472681822100434070 /* SplashScreen.swift in Sources */,
 				47580FE826966D34002CF7AA /* Links.swift in Sources */,
 				47580FE626966D12002CF7AA /* Strings.swift in Sources */,
+				E5CC3B86276C388D00E25BF7 /* DarkModeModifier.swift in Sources */,
 				1B246AD826798A990062156B /* NavigationBar.swift in Sources */,
 				1B6F53562684246D0020D3C3 /* PageControl.swift in Sources */,
 				1B6F534C2682F7E10020D3C3 /* LottieView.swift in Sources */,

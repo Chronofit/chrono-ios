@@ -33,8 +33,7 @@ private struct SplashView: View {
         ZStack {
             Color("Velvet")
                 .ignoresSafeArea()
-
-            Image("SplashScreen_Logo")
+            Image("AppIconName")
                 .padding()
                 .offset(x: 0, y: -40.0)
         }
