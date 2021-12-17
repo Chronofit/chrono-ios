@@ -50,7 +50,6 @@ struct Onboarding: View {
 
     var body: some View {
         VStack {
-            
             TabView(selection: $selectedPage.animation()) {
                 ForEach(data.indices) { index in
                     Onboarding_Subview(data: data[index])
@@ -67,7 +66,7 @@ struct Onboarding: View {
                 .padding(.horizontal)
                 .padding(.bottom)
         }
-        .background(Color.init("Velvet").ignoresSafeArea())
+        .background(Color("Velvet").ignoresSafeArea())
     }
 }
 

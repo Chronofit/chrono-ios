@@ -8,7 +8,6 @@
 import SwiftUI
 
 public struct DarkModeModifier: ViewModifier {
-    
     public func body(content: Content) -> some View {
         content
             .environment(\.colorScheme, .dark)

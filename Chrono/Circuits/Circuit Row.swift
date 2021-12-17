@@ -30,9 +30,8 @@ struct Circuit_Row: View {
                         .frame(width: 10, height: 15, alignment: .center)
                 }
 
-                
                 Text("\(sets) Sets")
-                
+
                 HStack {
                     BottomLabel(restTime: 50)
                         .padding(.trailing)
