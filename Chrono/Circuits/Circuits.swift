@@ -10,7 +10,8 @@ import SwiftUI
 struct Circuits: View {
     var body: some View {
         VStack {
-            Circuit_Row()
+            Circuit_Empty_Page()
+//            Circuit_Row()
             Spacer()
         }
     }
