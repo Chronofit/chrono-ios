@@ -28,9 +28,14 @@ struct Circuit_Row: View {
                     Image(systemName: "line.horizontal.3")
                         .resizable()
                         .frame(width: 10, height: 15, alignment: .center)
+                        
+                    
                 }
+                .padding(.trailing)
+                
 
                 Text("\(sets) Sets")
+                    .frame(maxWidth: .infinity, alignment: .leading)
 
                 HStack {
                     BottomLabel(restTime: 50)
@@ -41,8 +46,10 @@ struct Circuit_Row: View {
                 .padding(.top)
             }
         }
-        .padding()
+        .background(Color("Plum"))
+        .cornerRadius(20, antialiased: true)
     }
+    
 }
 
 private struct BottomLabel: View {
@@ -61,6 +68,6 @@ struct Circuit_Row_Previews: PreviewProvider {
     static var previews: some View {
         Circuit_Row()
             .preferredColorScheme(.dark)
-            .previewLayout(.sizeThatFits)
+//            .previewLayout(.sizeThatFits)
     }
 }

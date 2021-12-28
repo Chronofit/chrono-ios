@@ -11,17 +11,19 @@ struct Circuit_Empty_Page: View{
     
     var body: some View{
         HStack{
-            
             Image(systemName: "plus.circle")
                 .foregroundColor(Color("Mustard"))
                 .font(.largeTitle)
                 .padding()
             
             Text("Create a Circuit")
+            Spacer()
         }
-        .padding()
-        .background(Color("Plum"))
-        .cornerRadius(20, antialiased: true)
+            .padding()
+            .background(Color("Plum"))
+            .cornerRadius(20, antialiased: true)
+            .frame(maxWidth: .infinity)
+            
     }
 }
 
@@ -29,6 +31,6 @@ struct Circuit_Empty_Page_Previews: PreviewProvider{
     static var previews: some View{
         Circuit_Empty_Page()
             .preferredColorScheme(.dark)
-            .previewLayout(.sizeThatFits)
+//            .previewLayout(.sizeThatFits)
     }
 }

@@ -11,7 +11,7 @@ struct Circuits: View {
     var body: some View {
         VStack {
             Circuit_Empty_Page()
-//            Circuit_Row()
+            Circuit_Row()
             Spacer()
         }
     }
