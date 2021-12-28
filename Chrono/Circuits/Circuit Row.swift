@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct Circuit_Row: View {
-    @State var sets = 5
     @State var circuitName = "Push ups"
+    @State var sets = 5
     @State var restTime = 50
     @State var workTime = 25
-    @State var workoutImg = Image("ic_abs")
+    @State var workoutImg = "ic_abs"
 
     var body: some View {
         HStack {
-            workoutImg
+            Image(workoutImg)
                 .resizable()
                 .frame(width: 80, height: 80, alignment: .center)
                 .padding()
@@ -32,11 +32,8 @@ struct Circuit_Row: View {
                     Image(systemName: "line.horizontal.3")
                         .resizable()
                         .frame(width: 10, height: 15, alignment: .center)
-                        
-                    
                 }
-                    .padding(.trailing)
-                
+                .padding(.trailing)
 
                 Text("\(sets) Sets")
                     .frame(maxWidth: .infinity, alignment: .leading)
@@ -53,7 +50,6 @@ struct Circuit_Row: View {
         .background(Color("Plum"))
         .cornerRadius(20, antialiased: true)
     }
-    
 }
 
 private struct RestBottomLabel: View {
@@ -72,7 +68,7 @@ private struct WorkBottomLabel: View {
     var label = "Work"
     var img = Image(systemName: "clock")
     var body: some View {
-        HStack{
+        HStack {
             BottomLabel(value: workTime, name: label, img: img)
         }
     }
