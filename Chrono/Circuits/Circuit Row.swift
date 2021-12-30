@@ -49,6 +49,7 @@ struct Circuit_Row: View {
         }
         .background(Color("Plum"))
         .cornerRadius(20, antialiased: true)
+        .shadow(color: .black, radius: 3, x: 0, y: 3)
     }
 }
 
@@ -92,6 +93,5 @@ struct Circuit_Row_Previews: PreviewProvider {
     static var previews: some View {
         Circuit_Row()
             .preferredColorScheme(.dark)
-//            .previewLayout(.sizeThatFits)
     }
 }

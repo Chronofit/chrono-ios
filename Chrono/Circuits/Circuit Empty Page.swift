@@ -22,6 +22,7 @@ struct Circuit_Empty_Page: View {
         .background(Color("Plum"))
         .cornerRadius(20, antialiased: true)
         .frame(maxWidth: .infinity)
+        .shadow(color: .black, radius: 3, x: 0, y: 3)
     }
 }
 
@@ -29,6 +30,5 @@ struct Circuit_Empty_Page_Previews: PreviewProvider {
     static var previews: some View {
         Circuit_Empty_Page()
             .preferredColorScheme(.dark)
-//            .previewLayout(.sizeThatFits)
     }
 }
