@@ -8,18 +8,22 @@
 import SwiftUI
 
 struct Circuit_Row: View {
+    @State var circuitName = "Push ups"
     @State var sets = 5
+    @State var restTime = 50
+    @State var workTime = 25
+    @State var workoutImg = "ic_abs"
 
     var body: some View {
         HStack {
-            Image(systemName: "heart.fill")
+            Image(workoutImg)
                 .resizable()
                 .frame(width: 80, height: 80, alignment: .center)
                 .padding()
 
             VStack {
                 HStack {
-                    Text("Jump Rope Warmup")
+                    Text("\(circuitName)")
                         .bold()
                         .font(.body)
 
@@ -29,30 +33,58 @@ struct Circuit_Row: View {
                         .resizable()
                         .frame(width: 10, height: 15, alignment: .center)
                 }
+                .padding(.trailing)
 
                 Text("\(sets) Sets")
+                    .frame(maxWidth: .infinity, alignment: .leading)
 
                 HStack {
-                    BottomLabel(restTime: 50)
+                    RestBottomLabel(restTime: 50)
                         .padding(.trailing)
-                    BottomLabel()
+                    WorkBottomLabel()
                     Spacer()
                 }
                 .padding(.top)
             }
         }
-        .padding()
+        .background(Color("Plum"))
+        .cornerRadius(20, antialiased: true)
+        .shadow(color: .black, radius: 3, x: 0, y: 3)
+    }
+}
+
+private struct RestBottomLabel: View {
+    @State var restTime = 25
+    var label = "Rest"
+    var img = Image("timer_black")
+    var body: some View {
+        HStack {
+            BottomLabel(value: restTime, name: label, img: img)
+        }
+    }
+}
+
+private struct WorkBottomLabel: View {
+    @State var workTime = 25
+    var label = "Work"
+    var img = Image(systemName: "clock")
+    var body: some View {
+        HStack {
+            BottomLabel(value: workTime, name: label, img: img)
+        }
     }
 }
 
 private struct BottomLabel: View {
-    @State var restTime = 10
+    @State var value = 10
+    @State var name = "Work"
+    @State var img = Image(systemName: "line.horizontal.3")
     var body: some View {
         HStack {
-            Image(systemName: "line.horizontal.3")
+            img
                 .resizable()
-                .frame(width: 10, height: 15, alignment: .center)
-            Text("Rest: \(restTime)s")
+                .frame(width: 15, height: 15, alignment: .center)
+            Text("\(name): \(value)s")
         }
     }
 }
@@ -61,6 +93,5 @@ struct Circuit_Row_Previews: PreviewProvider {
     static var previews: some View {
         Circuit_Row()
             .preferredColorScheme(.dark)
-            .previewLayout(.sizeThatFits)
     }
 }
